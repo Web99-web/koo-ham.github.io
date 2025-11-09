@@ -10,8 +10,11 @@ header {
   column-gap: 2rem;
   position: sticky;
   top: 0;
-  z-index: 1000; /* da ostane iznad svega */
+  z-index: 1000;
+  width: 100%;              /* 🔧 DODANO — sprječava skupljanje lijevo */
+  box-sizing: border-box;   /* 🔧 DODANO — sprječava preklapanje paddinga */
 }
+
 
 /* Logo */
 .logo {
