@@ -125,3 +125,20 @@ footer a:hover {
     font-size: 1rem;
   }
 }
+
+.lang-switch {
+  margin-left: 1rem;
+}
+.lang-switch a {
+  background: #c13b26;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.lang-switch a:hover {
+  background: #a32f1f;
+}
+
