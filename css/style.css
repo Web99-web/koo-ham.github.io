@@ -11,31 +11,43 @@ body {
 /* ------------------------------ */
 /* Navigacija (header + meni + jezik) */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background: #ffebe1;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   padding: 1rem 3rem;
   position: relative;
-}
-
-.navbar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  flex-grow: 1;
-  gap: 2rem;
 }
 
-.navbar .logo {
+/* Logo */
+.logo {
   font-weight: 700;
   font-size: 1.6rem;
   color: #c13b26;
   text-decoration: none;
 }
 
-/* Linkovi u meniju */
+/* Navigacija */
+.navbar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  list-style: none;
+}
+
 .navbar a {
   text-decoration: none;
   color: #333;
@@ -169,7 +181,7 @@ footer a:hover {
     padding: 1rem;
   }
 
-  .navbar {
+  .navbar ul {
     flex-direction: column;
     gap: 1rem;
   }
