@@ -141,4 +141,27 @@ footer a:hover {
 .lang-switch a:hover {
   background: #a32f1f;
 }
+.lang-switch {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.lang-switch a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #c13b26;
+  color: white !important;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.lang-switch a:hover {
+  background: #a32f1f;
+}
 
