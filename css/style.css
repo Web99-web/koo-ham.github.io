@@ -13,9 +13,9 @@ body {
 header {
   background: #ffebe1;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  padding: 0.8rem 3rem 0.8rem 1rem; /* lijevi rub smanjen */
-  position: relative;
-  display: flex;
+  padding: 0.8rem 2rem;
+  display: grid;
+  grid-template-columns: 200px 1fr 200px; /* fiksno: lijevo | centar | desno */
   align-items: center;
 }
 
@@ -25,16 +25,18 @@ header {
   font-size: 1.6rem;
   color: #c13b26;
   text-decoration: none;
+  justify-self: start;
   white-space: nowrap;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+.logo:hover {
+  color: #a12f1b;
+  transform: scale(1.05);
 }
 
 /* Navigacija */
 .navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto; /* centriraj meni između loga i gumba */
+  justify-self: center;
 }
 
 .navbar ul {
@@ -43,10 +45,6 @@ header {
   gap: 2rem;
   margin: 0;
   padding: 0;
-}
-
-.navbar li {
-  list-style: none;
 }
 
 .navbar a {
@@ -63,10 +61,7 @@ header {
 /* ------------------------------ */
 /* Jezični gumbi (HR / EN) */
 .lang-switch {
-  position: absolute;
-  right: 30px;
-  top: 50%;
-  transform: translateY(-50%);
+  justify-self: end;
 }
 
 .lang-switch a {
@@ -186,14 +181,9 @@ footer a:hover {
 /* Mobilna verzija */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-  }
-
-  .navbar {
-    justify-content: flex-start;
-    margin: 0;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1rem;
   }
 
   .navbar ul {
@@ -202,10 +192,7 @@ footer a:hover {
   }
 
   .lang-switch {
-    position: static;
-    transform: none;
-    margin-top: 1rem;
-    align-self: flex-end;
+    justify-self: center;
   }
 
   .hero h1 {
