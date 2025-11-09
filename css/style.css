@@ -16,7 +16,6 @@ header {
   padding: 0.8rem 3rem;
   position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -26,7 +25,7 @@ header {
   font-size: 1.6rem;
   color: #c13b26;
   text-decoration: none;
-  margin-right: 2rem;
+  margin-right: auto; /* guraj logo sasvim lijevo */
   white-space: nowrap;
 }
 
@@ -90,7 +89,7 @@ header {
   transform: scale(1.03); /* lagani efekt */
 }
 
-/* Ako želiš označiti aktivni jezik */
+/* Aktivni jezik */
 .lang-switch a.active {
   background: #333;
   color: #ffebe1;
