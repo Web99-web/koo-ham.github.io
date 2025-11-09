@@ -9,11 +9,11 @@ body {
 }
 
 /* ------------------------------ */
-/* Navigacija (header + meni + jezik) */
+/* Navigacija (header + logo + meni + jezik) */
 header {
   background: #ffebe1;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  padding: 1rem 3rem;
+  padding: 0.8rem 3rem;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -26,14 +26,8 @@ header {
   font-size: 1.6rem;
   color: #c13b26;
   text-decoration: none;
-}
-/* Razmak između loga i navigacije */
-.navbar {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 3rem; /* <<< ovo dodano */
+  margin-right: 2rem;
+  white-space: nowrap;
 }
 
 /* Navigacija */
@@ -60,11 +54,11 @@ header {
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  transition: 0.3s;
+  transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  color: #7d7a77; /* siva na hover */
+  color: #c13b26;
 }
 
 /* ------------------------------ */
@@ -80,18 +74,26 @@ header {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  background: #7d7a77; /* siva */
-  color: white !important;
-  padding: 6px 10px;
-  border-radius: 6px;
+  background: #7d7a77; /* osnovna siva pozadina */
+  color: #fff; /* bijeli tekst */
+  padding: 6px 12px;
+  border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
-  transition: 0.3s;
   font-size: 14px;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .lang-switch a:hover {
-  background: #605e5c; /* tamnija siva */
+  background: #000; /* crna na hover */
+  color: #ffebe1; /* roskasti ton teksta na hover */
+  transform: scale(1.03); /* lagani efekt */
+}
+
+/* Ako želiš označiti aktivni jezik */
+.lang-switch a.active {
+  background: #333;
+  color: #ffebe1;
 }
 
 /* ------------------------------ */
