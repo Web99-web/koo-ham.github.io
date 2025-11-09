@@ -151,7 +151,7 @@ footer a:hover {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  background: #c13b26;
+  background: #7d7a77; /* siva */
   color: white !important;
   padding: 6px 10px;
   border-radius: 6px;
@@ -162,6 +162,6 @@ footer a:hover {
 }
 
 .lang-switch a:hover {
-  background: #a32f1f;
+  background: #605e5c; /* tamnija siva */
 }
 
