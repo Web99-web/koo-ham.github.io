@@ -1,20 +1,21 @@
 /* ------------------------------ */
 /* Navigacija (header + logo + meni + jezik) */
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100vw; /* prisilno cijela širina ekrana */
+  left: 0;
   background: #ffebe1;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   padding: 1rem 2rem;
   display: grid;
-  grid-template-columns: auto 1fr auto; /* lijevo logo | sredina meni | desno gumb */
+  grid-template-columns: auto 1fr auto; /* logo | meni | gumb */
   align-items: center;
   column-gap: 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  width: 100%;              /* 🔧 DODANO — sprječava skupljanje lijevo */
-  box-sizing: border-box;   /* 🔧 DODANO — sprječava preklapanje paddinga */
+  box-sizing: border-box;
+  overflow: hidden; /* sprječava “pucanje” layouta */
 }
-
 
 /* Logo */
 .logo {
@@ -84,7 +85,7 @@ header {
 /* Mobilna verzija */
 @media (max-width: 768px) {
   header {
-    grid-template-columns: 1fr; /* sve ide ispod sebe */
+    grid-template-columns: 1fr;
     text-align: center;
     row-gap: 1rem;
     padding: 1rem;
