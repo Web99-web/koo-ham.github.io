@@ -3,10 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Koo-ham</title>
+  <title>Koo-ham — Sweet & Savory Recipes</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-  <h1>Welcome to Koo-ham</h1>
-  <p>Test page — first step toward the real version!</p>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Koo-ham</div>
+      <ul>
+        <li><a href="#sweet">Sweet</a></li>
+        <li><a href="#savory">Savory</a></li>
+        <li><a href="#traditional">Traditional</a></li>
+        <li><a href="#international">International</a></li>
+        <li><a href="#tips">Kitchen Tips</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="index.html">🇭🇷</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Koo-ham — because I cook my way.</h1>
+    <p>A bit of sweet, a bit of savory – discover our recipes!</p>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <section id="sweet">
+      <h2>Sweet</h2>
+      <div class="grid">
+        <a href="recipes/sweet/rafaelo.html" class="card">
+          <img src="images/rafaelo.jpg" alt="Rafaello balls">
+          <h3>Rafaello balls — only 4 ingredients</h3>
+        </a>
+        <a href="recipes/sweet/cheesecake.html" class="card">
+          <img src="images/cheesecake.jpg" alt="Cheesecake">
+          <h3>Cheesecake — the only one you'll ever need</h3>
+        </a>
+      </div>
+    </section>
+
+    <section id="savory">
+      <h2>Savory</h2>
+      <div class="grid">
+        <a href="recipes/savory/pumpkin-soup.html" class="card">
+          <img src="images/juha.jpg" alt="Pumpkin soup">
+          <h3>Pumpkin soup — the best!</h3>
+        </a>
+        <a href="recipes/savory/chicken-curry.html" class="card">
+          <img src="images/piletina.jpg" alt="Chicken curry">
+          <h3>Chicken curry — creamy and delicious</h3>
+        </a>
+      </div>
+    </section>
+
+    <section id="traditional">
+      <h2>Traditional</h2>
+      <div class="grid">
+        <a href="recipes/traditional/oblatne.html" class="card">
+          <img src="images/oblatne.jpg" alt="Wafer cake">
+          <h3>Wafer cake — grandma’s recipe</h3>
+        </a>
+      </div>
+    </section>
+
+    <section id="international">
+      <h2>International</h2>
+      <div class="grid">
+        <a href="recipes/international/ikea-cookies.html" class="card">
+          <img src="images/ikea-keksi.jpg" alt="IKEA cookies">
+          <h3>IKEA cookies — Pepparkakor</h3>
+        </a>
+      </div>
+    </section>
+
+    <section id="tips">
+      <h2>Kitchen Tips</h2>
+      <div class="grid">
+        <a href="recipes/tips/measuring.html" class="card">
+          <img src="images/mjerenje.jpg" alt="Measuring ingredients">
+          <h3>Measuring ingredients easily</h3>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Koo-ham — because food needs no signature.</p>
+    <p>In collaboration with <a href="https://metaadvisor.eu" target="_blank">Metaadvisor.eu</a></p>
+  </footer>
+
 </body>
 </html>
