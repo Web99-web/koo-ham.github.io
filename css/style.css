@@ -49,8 +49,8 @@ header {
 }
 
 .navbar a:hover {
-  background: #000;
-  color: #ffebe1;
+  background: #7d7a77;
+  color: #fff;
   padding: 4px 10px;
   border-radius: 6px;
   transition: all 0.3s ease;
