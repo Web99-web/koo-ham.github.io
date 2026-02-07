@@ -1,2 +1,15 @@
-{{ partial "lang-switch.html" . }}
+<header class="site-header">
+  <div class="container header-inner">
+
+    <div class="logo">
+      <a href="{{ .Site.BaseURL }}">Koo-ham</a>
+    </div>
+
+    {{ partial "nav.html" . }}
+
+    {{ partial "lang-switch.html" . }}
+
+  </div>
+</header>
+
 
