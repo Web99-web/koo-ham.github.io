@@ -1,0 +1,24 @@
+baseURL: "https://web99-web.github.io/koo-ham.github.io/"
+languageCode: "hr"
+title: "Koo-ham"
+
+defaultContentLanguage: "hr"
+
+languages:
+  hr:
+    languageName: "Hrvatski"
+    weight: 1
+  en:
+    languageName: "English"
+    weight: 2
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputs:
+  home:
+    - HTML
+  section:
+    - HTML
