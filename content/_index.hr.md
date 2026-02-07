@@ -1,3 +1,9 @@
-<h1>Koo-ham — jer kuham, ali po svom.</h1>
-<p>Malo slatkog, malo slanog – otkrijte naše recepte!</p>
+---
+title: "Koo-ham — jer kuham, ali po svom"
+description: "Malo slatkog, malo slanog – domaći recepti i savjeti"
+lang: "hr"
+translationKey: "koo-ham-home"
+---
+
+Malo slatkog, malo slanog – otkrijte moje recepte.
 
