@@ -1,4 +1,35 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" href="images/favicon.png">
+{{ partial "header.html" . }}
+
+<section class="hero">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Content }}</p>
+  </div>
+</section>
+
+<main class="container">
+
+  <section id="slatko">
+    <h2>Slatko</h2>
+  </section>
+
+  <section id="slano">
+    <h2>Slano</h2>
+  </section>
+
+  <section id="tradicionalno">
+    <h2>Tradicionalno</h2>
+  </section>
+
+  <section id="strano">
+    <h2>Strano</h2>
+  </section>
+
+  <section id="savjeti">
+    <h2>Savjeti u kuhinji</h2>
+  </section>
+
+</main>
+
+{{ partial "footer.html" . }}
 
