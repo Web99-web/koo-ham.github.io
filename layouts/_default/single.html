@@ -3,6 +3,10 @@
 <article class="recipe">
   <h1>{{ .Title }}</h1>
 
+  {{ with .Params.image }}
+    <img src="{{ . | relURL }}" style="max-width:600px; width:100%; margin:20px 0;">
+  {{ end }}
+
   {{ .Content }}
 
 </article>
