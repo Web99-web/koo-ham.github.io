@@ -13,9 +13,9 @@
 
     <div class="lang-switch">
       {{ if eq .Params.lang "hr" }}
-        <a href="/en/">🇬🇧 EN</a>
+        <a href="{{ "/en/" | relLangURL }}">🇬🇧 EN</a>
       {{ else }}
-        <a href="/">🇭🇷 HR</a>
+        <a href="{{ "/" | relLangURL }}">🇭🇷 HR</a>
       {{ end }}
     </div>
 
