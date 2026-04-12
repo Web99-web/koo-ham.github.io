@@ -10,9 +10,19 @@
 
 <main class="container">
 
-  <section id="slatko">
-    <h2>Slatko</h2>
-  </section>
+ <section id="slatko">
+  <h2>{{ i18n "slatko" }}</h2>
+
+  <div class="grid">
+    {{ range where .Site.RegularPages "Params.category" "slatko" }}
+      <a href="{{ .RelPermalink }}" class="card">
+        <img src="{{ .Params.image }}" alt="{{ .Title }}">
+        <h3>{{ .Title }}</h3>
+      </a>
+    {{ end }}
+  </div>
+
+</section>
 
   <section id="slano">
     <h2>Slano</h2>
