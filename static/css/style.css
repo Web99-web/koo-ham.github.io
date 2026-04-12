@@ -104,9 +104,10 @@ header {
 
 /* ------------------------------ */
 /* Hero sekcija */
+
 .hero {
   position: relative;
-  background: url('/images/blueberry-cake.png') center center / cover no-repeat;
+  background: url('/koo-ham.github.io/images/blueberry-cake.png') center center / cover no-repeat;
   height: 75vh;
   display: flex;
   align-items: center;
@@ -114,7 +115,6 @@ header {
   text-align: center;
   color: #fff;
 }
-
 /* lagani overlay da tekst bude čitljiv */
 .hero::before {
   content: "";
