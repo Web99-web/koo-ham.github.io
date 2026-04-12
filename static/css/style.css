@@ -105,20 +105,28 @@ header {
 /* ------------------------------ */
 /* Hero sekcija */
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-              url('/images/zena-kuha.png') center/cover no-repeat;
-  color: white;
+  position: relative;
+  background: url('/images/blueberry-cake.png') center center / cover no-repeat;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 7rem 2rem;
+  color: #fff;
 }
 
-.hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
+/* lagani overlay da tekst bude čitljiv */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
 }
 
-.hero p {
-  font-size: 1.3rem;
+/* tekst iznad slike */
+.hero .container {
+  position: relative;
+  z-index: 2;
 }
 
 /* ------------------------------ */
