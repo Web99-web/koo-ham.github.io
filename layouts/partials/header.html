@@ -1,15 +1,23 @@
-<header class="site-header">
-  <div class="container header-inner">
+<header>
+  <div class="navbar">
 
     <div class="logo">
       <a href="{{ .Site.BaseURL }}">Koo-ham</a>
     </div>
 
-    {{ partial "nav.html" . }}
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+      </ul>
+    </nav>
 
-    {{ partial "lang-switch.html" . }}
+    <div class="lang-switch">
+      {{ if eq .Params.lang "hr" }}
+        <a href="/en/">🇬🇧 EN</a>
+      {{ else }}
+        <a href="/">🇭🇷 HR</a>
+      {{ end }}
+    </div>
 
   </div>
 </header>
-
-
