@@ -3,6 +3,8 @@ title: "Palačinke"
 slug: "palacinke"
 date: 2026-04-12
 
+translationKey: "palacinke"
+
 category: "slatko"
 tags: ["brzo", "dorucak"]
 
@@ -29,11 +31,11 @@ summary: "Brze domaće palačinke koje uspijevaju svaki put."
 ## Priprema
 
 1. Razbij jaja u zdjelu.  
-2. Dodaj mlijeko i promiješaj.  
+2. Dodaj mlijeko i dobro promiješaj.  
 3. Postupno dodaj brašno.  
 4. Zagrij tavu i dodaj malo ulja.  
-5. Pecite tanko dok ne dobiju zlatnu boju.  
+5. Pecite tanke palačinke dok ne postanu zlatno smeđe.  
 
 ## Savjet
 
-Ako želiš mekše palačinke, dodaj malo mineralne vode.
+Za mekše palačinke dodaj malo mineralne vode.
