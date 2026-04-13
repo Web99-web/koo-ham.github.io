@@ -7,11 +7,13 @@ defaultContentLanguage: "hr"
 languages:
   hr:
     languageName: "Hrvatski"
+    title: "Koo-ham – kuham po svom"
     weight: 1
     contentDir: "content/hr"
 
   en:
     languageName: "English"
+    title: "Koo-ham – cooking my way"
     weight: 2
     contentDir: "content/en"
 
