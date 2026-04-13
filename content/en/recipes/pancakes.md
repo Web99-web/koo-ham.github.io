@@ -8,7 +8,7 @@ translationKey: "palacinke"
 category: "slatko"
 tags: ["quick", "breakfast"]
 
-image: "/images/blueberry-cake.png"
+image: "/images/Palacinke-creps.png"
 
 ingredients:
   - egg
