@@ -13,14 +13,23 @@
 <section id="slatko">
   <h2>{{ i18n "slatko" }}</h2>
 
-  <div class="grid">
-    {{ range first 6 (where .Site.RegularPages "Params.category" "slatko") }}
-      <a href="{{ .RelPermalink }}" class="card">
-        <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
-        <h3>{{ .Title }}</h3>
-      </a>
-    {{ end }}
-  </div>
+<div class="recipe-grid">
+  {{ range first 6 (where .Site.RegularPages "Params.category" "slatko") }}
+    
+    <div class="recipe-card">
+      
+      {{ with .Params.image }}
+        <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="card-image">
+      {{ end }}
+
+      <h3 class="card-title">{{ .Title }}</h3>
+
+      <a href="{{ .RelPermalink }}" class="card-link"></a>
+
+    </div>
+
+  {{ end }}
+</div>
 
 </section>
 
