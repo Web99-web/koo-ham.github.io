@@ -218,3 +218,33 @@ footer a:hover {
     font-size: 1rem;
   }
 }
+
+/* RECIPE PAGE */
+.recipe {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.recipe h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.recipe-image {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto 2rem auto;
+  border-radius: 12px;
+}
+
+.recipe-content {
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.recipe-content h2 {
+  margin-top: 2rem;
+  color: #c13b26;
+}
