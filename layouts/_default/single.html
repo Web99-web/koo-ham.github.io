@@ -4,11 +4,16 @@
 
   <h1>{{ .Title }}</h1>
 
-
   {{ with .Params.image }}
-  <img src="{{ . }}" alt="{{ $.Title }}" class="recipe-image">
+
+    <!-- DEV (GitHub Pages project path) -->
+    <img src="/koo-ham.github.io{{ . }}" alt="{{ $.Title }}" class="recipe-image">
+
+    <!-- PRODUCTION (kad ide prava domena) -->
+    <!-- <img src="{{ . }}" alt="{{ $.Title }}" class="recipe-image"> -->
+
   {{ end }}
-  
+
   <div class="recipe-content">
     {{ .Content }}
   </div>
