@@ -19,7 +19,7 @@
     <div class="recipe-card">
       
       {{ with .Params.image }}
-        <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="card-image">
+        <img src="{{ . | relURL }}" alt="{{ .Title }}" class="card-image">
       {{ end }}
 
       <h3 class="card-title">{{ .Title }}</h3>
