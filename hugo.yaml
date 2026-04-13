@@ -4,13 +4,16 @@ title: "Koo-ham"
 
 defaultContentLanguage: "hr"
 
-languages:
+    languages:
   hr:
     languageName: "Hrvatski"
     weight: 1
+    contentDir: "content/hr"
+
   en:
     languageName: "English"
     weight: 2
+    contentDir: "content/en"
 
 markup:
   goldmark:
