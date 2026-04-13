@@ -8,7 +8,7 @@ translationKey: "palacinke"
 category: "slatko"
 tags: ["brzo", "dorucak"]
 
-image: "/images/blueberry-cake.png"
+image: "/images/Palacinke-creps.png"
 
 ingredients:
   - jaje
