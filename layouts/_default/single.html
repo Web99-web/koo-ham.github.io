@@ -1,14 +1,17 @@
 {{ define "main" }}
 
-<article class="recipe">
+<section class="recipe">
+
   <h1>{{ .Title }}</h1>
 
   {{ with .Params.image }}
-    <img src="{{ . | relURL }}" style="max-width:600px; width:100%; margin:20px 0;">
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="recipe-image">
   {{ end }}
 
-  {{ .Content }}
+  <div class="recipe-content">
+    {{ .Content }}
+  </div>
 
-</article>
+</section>
 
 {{ end }}
