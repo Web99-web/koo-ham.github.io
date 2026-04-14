@@ -16,7 +16,9 @@
 <div class="recipe-grid">
   {{ range first 6 (where .Site.RegularPages "Params.category" "slatko") }}
     
-    <div class="recipe-card">
+    
+    <div class="recipe-card fade-in">
+      <span class="card-badge">{{ .Params.category }}</span>
       
       {{ with .Params.image }}
         <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="card-image">
