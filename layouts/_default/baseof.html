@@ -7,20 +7,6 @@
 
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 </head>
-
-  <script>
-  const elements = document.querySelectorAll('.fade-in');
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  });
-
-  elements.forEach(el => observer.observe(el));
-</script>
 <body>
 
   {{ partial "header.html" . }}
@@ -28,6 +14,21 @@
   {{ block "main" . }}{{ end }}
 
   {{ partial "footer.html" . }}
+
+  <!-- 🔥 OVO SI DODALA -->
+  <script>
+    const elements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
 
 </body>
 </html>
