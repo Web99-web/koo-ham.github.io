@@ -22,9 +22,7 @@
   <span class="card-badge">{{ .Params.category }}</span>
 
 
-  {{ with .Params.image }}
-  <img src="{{ . }}" alt="{{ $.Title }}" class="card-image">
-  {{ end }}
+<img src="{{ .Params.image }}" alt="{{ .Title }}" class="card-image">
   <h3 class="card-title">{{ .Title }}</h3>
 
 </a>
