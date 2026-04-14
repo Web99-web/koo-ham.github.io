@@ -303,13 +303,13 @@ footer a:hover {
 }
 
 /* 🔥 GRADIENT OVERLAY (TO TI FALI) */
-  recipe-card::before {
+  .recipe-card::before {
   content: "";
   position: absolute;
   inset: 0;
 
   /* 👇 puno nježnije + toplije */
-  background: linear-gradient(
+  .background: linear-gradient(
     to top,
     rgba(0,0,0,0.25),
     rgba(0,0,0,0.05),
