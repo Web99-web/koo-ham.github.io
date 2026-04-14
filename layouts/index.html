@@ -17,18 +17,17 @@
   {{ range first 6 (where .Site.RegularPages "Params.category" "slatko") }}
     
     
-    <div class="recipe-card fade-in">
-      <span class="card-badge">{{ .Params.category }}</span>
-      
-      {{ with .Params.image }}
-        <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="card-image">
-      {{ end }}
+ <a href="{{ .RelPermalink }}" class="recipe-card fade-in">
 
-      <h3 class="card-title">{{ .Title }}</h3>
+  <span class="card-badge">{{ .Params.category }}</span>
 
-      <a href="{{ .RelPermalink }}" class="card-link"></a>
+  {{ with .Params.image }}
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="card-image">
+  {{ end }}
 
-    </div>
+  <h3 class="card-title">{{ .Title }}</h3>
+
+</a>
 
   {{ end }}
 </div>
