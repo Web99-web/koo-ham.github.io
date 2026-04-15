@@ -2,18 +2,28 @@
 
 <h1>{{ .Title }}</h1>
 
-{{ range .RegularPages }}
+<div>
 
-  <a href="{{ .RelPermalink }}">
+  {{ range .RegularPages }}
     
-    {{ with .Params.image }}
-      <img src="{{ . }}" style="width:200px;">
-    {{ end }}
+    <div style="margin-bottom:20px;">
 
-    <p>{{ .Title }}</p>
+      <a href="{{ .RelPermalink }}">
+        
+        {{ if .Params.image }}
+          <img src="{{ .Params.image | relURL }}" style="width:200px;">
+        {{ else }}
+          <p>NO IMAGE</p>
+        {{ end }}
 
-  </a>
+        <p>{{ .Title }}</p>
 
-{{ end }}
+      </a>
+
+    </div>
+
+  {{ end }}
+
+</div>
 
 {{ end }}
