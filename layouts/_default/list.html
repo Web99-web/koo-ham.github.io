@@ -5,9 +5,13 @@
 <div class="recipe-grid">
 
   {{ range .RegularPages }}
+    {{ $img := .Params.thumbnail | default .Params.featured_image | default .Params.image_url }}
+
     <a href="{{ .RelPermalink }}" class="recipe-card">
 
-      <img src="{{ .Params.image | relURL }}" class="card-image">
+      <img src="{{ $img | relURL }}" 
+           alt="{{ .Params.image_alt }}" 
+           class="card-image">
 
       <div class="card-title">
         {{ .Title }}
