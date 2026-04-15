@@ -2,17 +2,13 @@
   <div class="navbar">
 
     <div class="logo">
-      <a href="{{ .Site.BaseURL }}">Koo-ham</a>
+      <a href="{{ "/" | relLangURL }}">Koo-ham</a>
     </div>
 
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-      </ul>
-    </nav>
+    {{ partial "nav.html" . }}   <!-- 🔥 OVO POVEZUJE NAV -->
 
     <div class="lang-switch">
-      {{ if eq .Params.lang "hr" }}
+      {{ if eq .Lang "hr" }}
         <a href="{{ "/en/" | relLangURL }}">🇬🇧 EN</a>
       {{ else }}
         <a href="{{ "/" | relLangURL }}">🇭🇷 HR</a>
