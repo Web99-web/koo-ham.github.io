@@ -1,13 +1,26 @@
+
 {{ define "main" }}
 
 <h1>{{ .Title }}</h1>
 
-<ul>
+<div class="recipe-grid">
+
   {{ range .Pages }}
-    <li>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    </li>
+    <div class="recipe-card">
+      
+      <a href="{{ .RelPermalink }}">
+        
+        {{ with .Params.image }}
+          <img src="/koo-ham.github.io{{ . }}" alt="{{ $.Title }}" class="recipe-thumb">
+        {{ end }}
+
+        <h3>{{ .Title }}</h3>
+
+      </a>
+
+    </div>
   {{ end }}
-</ul>
+
+</div>
 
 {{ end }}
