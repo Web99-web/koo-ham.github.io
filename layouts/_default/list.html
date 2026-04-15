@@ -4,12 +4,10 @@
 
 <div class="recipe-grid">
 
-  {{ range .Pages }}
+  {{ range .RegularPages }}
     <a href="{{ .RelPermalink }}" class="recipe-card">
 
-      {{ with .Params.image }}
-  <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="card-image">
-    {{ end }}
+      <img src="{{ .Params.image | relURL }}" class="card-image">
 
       <div class="card-title">
         {{ .Title }}
