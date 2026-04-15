@@ -6,9 +6,14 @@ date: 2026-04-12
 translationKey: "palacinke"
 
 category: "slatko"
-tags: ["brzo", "dorucak"]
+tags: ["brzo", "dorucak", "slatko", "palacinke"]
 
-image: "/images/Palacinke-creps.png"
+# 🔥 IMAGE SYSTEM (SEO + UX)
+image_url: "/images/Palacinke-creps.png"
+featured_image: "/images/Palacinke-creps.png"
+thumbnail: "/images/Palacinke-creps.png"
+image_alt: "Domaće palačinke na tavi"
+image_credit: "Koo-ham"
 
 ingredients:
   - jaje
