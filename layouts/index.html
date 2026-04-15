@@ -1,12 +1,87 @@
-{{ range .Site.RegularPages }}
+{{ define "main" }}
 
-<a href="{{ .RelPermalink }}">
+<section class="hero">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Content }}</p>
+  </div>
+</section>
 
-  <p>{{ .Title }}</p>
+<main class="container">
 
+<!-- SLATKO -->
+<section id="slatko">
+  <h2>{{ i18n "slatko" }}</h2>
 
-  <img src="https://web99-web.github.io/koo-ham.github.io{{ .Params.image }}" width="200">
+  <div class="recipe-grid">
 
-</a>
+    {{ $pages := where .Site.RegularPages "Lang" .Site.Language.Lang }}
+    {{ $slatko := where $pages "Params.category" "eq" "slatko" }}
+
+    {{ range first 6 $slatko }}
+
+    <a href="{{ .RelPermalink }}" class="recipe-card fade-in">
+
+      <span class="card-badge">{{ .Params.category }}</span>
+
+      <!-- 🔥 FIX -->
+      <img src="https://web99-web.github.io/koo-ham.github.io{{ .Params.image }}" 
+           alt="{{ .Title }}" 
+           class="card-image">
+
+      <h3 class="card-title">{{ .Title }}</h3>
+
+    </a>
+
+    {{ end }}
+
+  </div>
+
+</section>
+
+<!-- SLANO -->
+<section id="slano">
+  <h2>Slano</h2>
+
+  <div class="recipe-grid">
+
+    {{ $slano := where $pages "Params.category" "eq" "slano" }}
+
+    {{ range first 6 $slano }}
+
+    <a href="{{ .RelPermalink }}" class="recipe-card fade-in">
+
+      <span class="card-badge">{{ .Params.category }}</span>
+
+      <img src="https://web99-web.github.io/koo-ham.github.io{{ .Params.image }}" 
+           alt="{{ .Title }}" 
+           class="card-image">
+
+      <h3 class="card-title">{{ .Title }}</h3>
+
+    </a>
+
+    {{ end }}
+
+  </div>
+
+</section>
+
+<!-- OSTALO (placeholder za kasnije) -->
+<section id="tradicionalno">
+  <h2>Tradicionalno</h2>
+</section>
+
+<section id="strano">
+  <h2>Strano</h2>
+</section>
+
+<section id="savjeti">
+  <h2>Savjeti u kuhinji</h2>
+</section>
+
+</main>
+
+{{ partial "footer.html" . }}
 
 {{ end }}
