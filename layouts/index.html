@@ -14,7 +14,10 @@
   <h2>{{ i18n "slatko" }}</h2>
 
 <div class="recipe-grid">
-  {{ range first 6 (where .Site.RegularPages "Params.category" "eq" "slatko") }}
+  {{ $pages := where .Site.RegularPages "Lang" .Site.Language.Lang }}
+{{ $slatko := where $pages "Params.category" "eq" "slatko" }}
+
+{{ range first 6 $slatko }}
 
 <a href="{{ .RelPermalink }}" class="recipe-card fade-in">
 
