@@ -8,8 +8,8 @@
     <a href="{{ .RelPermalink }}" class="recipe-card">
 
       {{ with .Params.image }}
-        <img src="{{ . | relURL }}" alt="{{ .Title }}" class="card-image">
-      {{ end }}
+  <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="card-image">
+    {{ end }}
 
       <div class="card-title">
         {{ .Title }}
