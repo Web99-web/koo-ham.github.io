@@ -2,24 +2,18 @@
 
 <h1>{{ .Title }}</h1>
 
-<div class="recipe-grid">
+{{ range .RegularPages }}
 
-  {{ range .RegularPages }}
-    {{ $img := .Params.thumbnail | default .Params.featured_image | default .Params.image_url }}
+  <a href="{{ .RelPermalink }}">
+    
+    {{ with .Params.image }}
+      <img src="{{ . }}" style="width:200px;">
+    {{ end }}
 
-    <a href="{{ .RelPermalink }}" class="recipe-card">
+    <p>{{ .Title }}</p>
 
-      <img src="{{ $img | relURL }}" 
-           alt="{{ .Params.image_alt }}" 
-           class="card-image">
+  </a>
 
-      <div class="card-title">
-        {{ .Title }}
-      </div>
-
-    </a>
-  {{ end }}
-
-</div>
+{{ end }}
 
 {{ end }}
