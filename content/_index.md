@@ -1,5 +1,6 @@
 ---
 title: "Koo-ham — jer kuham, ali po svom"
+description: "Malo slatkog, malo slanog – domaći recepti i savjeti"
 ---
 
-Malo slanog, malo slatkog, za svakog ponešto. Dobrodošli na Koo-ham 🍰
+Malo slatkog, malo slanog – otkrijte moje recepte.
