@@ -1,8 +1,6 @@
 ---
-title: "Koo-ham — I cook, but my way"
-description: "Sweet and savory homemade recipes and kitchen tips"
-lang: "en"
-translationKey: "koo-ham-home"
+title: "Recipes"
+description: "Browse all recipes"
 ---
 
-A bit sweet, a bit savory – discover my recipes.
+Browse all recipes.
