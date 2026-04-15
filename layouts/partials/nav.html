@@ -1,3 +1,21 @@
 <nav>
-  <a href="/">Home</a>
+
+  <a href="{{ "/" | relLangURL }}">
+    {{ if eq .Lang "hr" }}Početna{{ else }}Home{{ end }}
+  </a>
+
+  {{ if eq .Lang "hr" }}
+    <a href="{{ "slatko" | relLangURL }}">Slatko</a>
+    <a href="{{ "slano" | relLangURL }}">Slano</a>
+    <a href="{{ "tradicionalno" | relLangURL }}">Tradicionalno</a>
+    <a href="{{ "strano" | relLangURL }}">Strano</a>
+    <a href="{{ "savjeti" | relLangURL }}">Savjeti</a>
+  {{ else }}
+    <a href="{{ "sweet" | relLangURL }}">Sweet</a>
+    <a href="{{ "savory" | relLangURL }}">Savory</a>
+    <a href="{{ "traditional" | relLangURL }}">Traditional</a>
+    <a href="{{ "international" | relLangURL }}">International</a>
+    <a href="{{ "tips" | relLangURL }}">Tips</a>
+  {{ end }}
+
 </nav>
