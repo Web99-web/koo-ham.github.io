@@ -1,10 +1,11 @@
-{{ define "main" }}
+{{ range .Site.RegularPages }}
 
-<p>COUNT ALL: {{ len .Site.Pages }}</p>
-<p>COUNT REGULAR: {{ len .Site.RegularPages }}</p>
+<a href="{{ .RelPermalink }}">
 
-{{ range .Site.Pages }}
-  <p>{{ .Kind }} | {{ .Title }} | {{ .Params.category }}</p>
-{{ end }}
+  <p>{{ .Title }}</p>
+
+  <img src="{{ .Params.image | relURL }}" width="200">
+
+</a>
 
 {{ end }}
