@@ -8,7 +8,10 @@ translationKey: "palacinke"
 category: "slatko"
 tags: ["brzo", "dorucak", "slatko", "palacinke"]
 
-# 🔥 IMAGE SYSTEM (SEO + UX)
+# 🔥 OBAVEZNO (ovo koristi template)
+image: "/images/Palacinke-creps.png"
+
+# 🔥 dodatno (SEO + kasnije)
 image_url: "/images/Palacinke-creps.png"
 featured_image: "/images/Palacinke-creps.png"
 thumbnail: "/images/Palacinke-creps.png"
@@ -23,6 +26,7 @@ ingredients:
   - ulje
 
 summary: "Brze domaće palačinke koje uspijevaju svaki put."
+---
 ---
 
 ## Sastojci
