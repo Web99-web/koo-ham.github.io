@@ -1,5 +1,5 @@
 ---
-title: "Slatko"
+title: "Savory"
 ---
 
-Svi slatki recepti.
+All savory recipes.
