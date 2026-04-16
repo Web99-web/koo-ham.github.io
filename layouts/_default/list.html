@@ -1,29 +1,29 @@
 {{ define "main" }}
 
-<h1>{{ .Title }}</h1>
+<section class="container">
 
-<div>
+  <h1>{{ .Title }}</h1>
 
-  {{ range .RegularPages }}
-    
-    <div style="margin-bottom:20px;">
-
-      <a href="{{ .RelPermalink }}">
-        
-        {{ if .Params.image }}
-          <img src="{{ .Params.image | relURL }}" style="width:200px;">
-        {{ else }}
-          <p>NO IMAGE</p>
-        {{ end }}
-
-        <p>{{ .Title }}</p>
-
-      </a>
-
-    </div>
-
+  {{ if .Content }}
+    <p class="section-desc">{{ .Content }}</p>
   {{ end }}
 
-</div>
+  <div class="recipe-grid">
+
+    {{ range .Pages }}
+      <a href="{{ .RelPermalink }}" class="recipe-card">
+
+        {{ with .Params.image }}
+          <img src="{{ . }}" alt="{{ $.Title }}">
+        {{ end }}
+
+        <h3>{{ .Title }}</h3>
+
+      </a>
+    {{ end }}
+
+  </div>
+
+</section>
 
 {{ end }}
