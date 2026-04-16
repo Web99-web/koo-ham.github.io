@@ -1,5 +1,6 @@
 ---
-title: "Slatko"
+---
+title: "Traditional"
 ---
 
-Svi slatki recepti.
+All traditional recipes.
