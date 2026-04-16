@@ -1,5 +1,5 @@
 ---
-title: "Slatko"
+title: "Sweet"
 ---
 
-Svi slatki recepti.
+All sweet recipes.
