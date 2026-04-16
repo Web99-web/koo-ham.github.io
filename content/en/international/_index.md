@@ -1,5 +1,5 @@
 ---
-title: "Slatko"
+title: "International"
 ---
 
-Svi slatki recepti.
+All international recipes from around the world.
