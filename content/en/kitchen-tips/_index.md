@@ -1,5 +1,5 @@
 ---
-title: "Slatko"
+title: "Tips"
 ---
 
-Svi slatki recepti.
+Helpful kitchen tips and tricks.
