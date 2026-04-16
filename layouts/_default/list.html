@@ -10,11 +10,11 @@
 
   <div class="recipe-grid">
 
-    {{ range .Pages }}
+    {{ range .RegularPagesRecursive }}
       <a href="{{ .RelPermalink }}" class="recipe-card">
 
         {{ with .Params.image }}
-          <img src="{{ . }}" alt="{{ $.Title }}">
+          <img src="{{ . | relURL }}" alt="{{ $.Title }}">
         {{ end }}
 
         <h3>{{ .Title }}</h3>
