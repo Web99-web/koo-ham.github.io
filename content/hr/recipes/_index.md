@@ -1,6 +1,7 @@
 ---
-title: "Recepti"
-description: "Pregled svih recepata"
+title: "Recipes"
+image: "/images/recepti.png"
+description: "Overview of all recipes"
 ---
 
-Pregled svih recepata.
+Overview of all recipes.
