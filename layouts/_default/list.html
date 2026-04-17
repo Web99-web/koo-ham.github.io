@@ -8,13 +8,17 @@
     <p class="section-desc">{{ .Content }}</p>
   {{ end }}
 
+  {{ with .Params.image }}
+    <img src="{{ . | relURL }}" class="category-hero">
+  {{ end }}
+
   <div class="recipe-grid">
 
     {{ range .RegularPagesRecursive }}
       <a href="{{ .RelPermalink }}" class="recipe-card">
 
         {{ with .Params.image }}
-          <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+          <img src="{{ . | relURL }}" alt="{{ .Title }}">
         {{ end }}
 
         <h3>{{ .Title }}</h3>
