@@ -4,7 +4,7 @@
     {{ if eq .Lang "hr" }}Početna{{ else }}Home{{ end }}
   </a>
 
-<a href="{{ if eq .Lang "hr" }}/recepti/{{ else }}/recipes/{{ end }}">
+<a href="{{ if eq .Lang "hr" }}{{ "/recepti/" | relURL }}{{ else }}{{ "/recipes/" | relURL }}{{ end }}">
   {{ if eq .Lang "hr" }}Recepti{{ else }}Recipes{{ end }}
 </a>
 
