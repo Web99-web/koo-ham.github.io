@@ -1,6 +1,6 @@
 ---
 title: "Slano"
-image: "/images/slatko.png"
+image: "/images/slano.png"
 ---
 
 Svi slani recepti.
