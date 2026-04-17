@@ -1,12 +1,14 @@
 <nav>
 
-  <a href="{{ "/" | relLangURL }}">
+  <!-- POČETNA -->
+  <a href="{{ .Site.BaseURL }}">
     {{ if eq .Lang "hr" }}Početna{{ else }}Home{{ end }}
   </a>
 
-<a href="{{ if eq .Lang "hr" }}{{ "/recepti/" | relURL }}{{ else }}{{ "/recipes/" | relURL }}{{ end }}">
-  {{ if eq .Lang "hr" }}Recepti{{ else }}Recipes{{ end }}
-</a>
+  <!-- RECEPTI -->
+  <a href="{{ if eq .Lang "hr" }}{{ printf "%srecepti/" .Site.BaseURL }}{{ else }}{{ printf "%srecipes/" .Site.BaseURL }}{{ end }}">
+    {{ if eq .Lang "hr" }}Recepti{{ else }}Recipes{{ end }}
+  </a>
 
   {{ if eq .Lang "hr" }}
     <a href="{{ "recepti/slatko" | relLangURL }}">Slatko</a>
