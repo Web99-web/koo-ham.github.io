@@ -18,9 +18,9 @@
       <a href="{{ .RelPermalink }}" class="recipe-card">
 
         {{ with .Params.image }}
-          <img src="{{ . | relURL }}" alt="{{ .Title }}">
+          <img src="{{ . | relURL }}" alt="{{ $.Title }}">
         {{ end }}
-
+        
         <h3>{{ .Title }}</h3>
 
       </a>
