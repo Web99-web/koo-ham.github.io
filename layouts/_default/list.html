@@ -1,5 +1,5 @@
 {{ define "main" }}
-TEST123
+TEST456
 <section class="container">
 
   <h1>{{ .Title }}</h1>
@@ -8,8 +8,9 @@ TEST123
     <p class="section-desc">{{ .Content }}</p>
   {{ end }}
 
-{{ with .Params.image }} <img src="{{ . | absURL }}" class="category-hero"> 
-  {{ end }}
+{{ with .Params.image }}
+  <img src="{{ printf "%s%s" $.Site.BaseURL (strings.TrimPrefix "/" .) }}" class="category-hero">
+{{ end }}
 
   <div class="recipe-grid">
 
