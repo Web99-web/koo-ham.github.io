@@ -411,3 +411,12 @@ nav ul {
   justify-content: space-between;  /* logo lijevo, nav sredina, lang desno */
   align-items: center;
 }
+
+.category-hero {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
