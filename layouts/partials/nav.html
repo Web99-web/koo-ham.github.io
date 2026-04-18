@@ -6,9 +6,9 @@
   </a>
 
   <!-- RECEPTI -->
-  <a href="{{ if eq .Lang "hr" }}{{ printf "%srecepti/" .Site.BaseURL }}{{ else }}{{ printf "%srecipes/" .Site.BaseURL }}{{ end }}">
-    {{ if eq .Lang "hr" }}Recepti{{ else }}Recipes{{ end }}
-  </a>
+ <a href="{{ if eq .Lang "hr" }}{{ printf "%srecepti/" .Site.BaseURL }}{{ else }}{{ "recipes" | relLangURL }}{{ end }}">
+  {{ if eq .Lang "hr" }}Recepti{{ else }}Recipes{{ end }}
+</a>
 
   {{ if eq .Lang "hr" }}
     <a href="{{ "recepti/slatko" | relLangURL }}">Slatko</a>
