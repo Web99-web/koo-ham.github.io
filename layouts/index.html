@@ -38,10 +38,9 @@
   </div>
 
   <!-- 👇 OVDJE IDE -->
-  <a href="{{ if eq .Lang "hr" }}{{ "/recepti/" | relLangURL }}{{ else }}{{ "/recipes/" | relLangURL }}{{ end }}" class="view-more">
+  <a href="{{ if eq .Lang "hr" }}{{ .Site.BaseURL }}recepti/{{ else }}{{ .Site.BaseURL }}en/recipes/{{ end }}" class="view-more">
   {{ if eq .Lang "hr" }}Vidi više →{{ else }}View more →{{ end }}
-    </a>
-  
+  </a>
 </section>
 
   
