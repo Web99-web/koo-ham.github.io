@@ -7,13 +7,14 @@
 
     {{ partial "nav.html" . }}   <!-- 🔥 OVO POVEZUJE NAV -->
 
+    
     <div class="lang-switch">
-      {{ if eq .Lang "hr" }}
-        <a href="{{ "/en/" | relLangURL }}">🇬🇧 EN</a>
-      {{ else }}
-        <a href="{{ "/" | relLangURL }}">🇭🇷 HR</a>
-      {{ end }}
+    {{ if eq .Lang "hr" }}
+      <a href="{{ printf "%sen/" .Site.BaseURL }}">🇬🇧 EN</a>
+    {{ else }}
+      <a href="{{ .Site.BaseURL }}">🇭🇷 HR</a>
+    {{ end }}
     </div>
-
+    
   </div>
 </header>
