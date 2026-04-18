@@ -1,7 +1,14 @@
+
 <div class="lang-switch">
-  {{ if eq .Params.lang "hr" }}
-    <a href="{{ .Site.BaseURL }}en/">🇬🇧 EN</a>
+
+  {{ if .IsTranslated }}
+    {{ range .Translations }}
+      <a href="{{ .RelPermalink }}">
+        {{ if eq .Lang "hr" }}🇭🇷 HR{{ else }}🇬🇧 EN{{ end }}
+      </a>
+    {{ end }}
   {{ else }}
-    <a href="{{ .Site.BaseURL }}">🇭🇷 HR</a>
+    <a href="{{ "/" | relURL }}">🌐</a>
   {{ end }}
+
 </div>
