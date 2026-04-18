@@ -1,14 +1,21 @@
-
 <div class="lang-switch">
 
   {{ if .IsTranslated }}
+
     {{ range .Translations }}
-      <a href="{{ .RelPermalink }}">
+      <a href="{{ .Permalink }}">
         {{ if eq .Lang "hr" }}🇭🇷 HR{{ else }}🇬🇧 EN{{ end }}
       </a>
     {{ end }}
+
   {{ else }}
-    <a href="{{ "/" | relURL }}">🌐</a>
+
+    {{ if eq .Lang "hr" }}
+      <a href="{{ printf "%sen/" .Site.BaseURL }}">🇬🇧 EN</a>
+    {{ else }}
+      <a href="{{ .Site.BaseURL }}">🇭🇷 HR</a>
+    {{ end }}
+
   {{ end }}
 
 </div>
