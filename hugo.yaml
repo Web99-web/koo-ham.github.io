@@ -3,7 +3,7 @@ languageCode: "hr"
 title: "Koo-ham"
 
 defaultContentLanguage: "hr"
-defaultContentLanguageInSubdir: true   # 👈 OVO JE KLJUČ ZA PRIJEVOD NA ENGLESKI
+
 
 languages:
   hr:
