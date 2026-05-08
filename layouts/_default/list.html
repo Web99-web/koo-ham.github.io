@@ -14,7 +14,8 @@ TEST456
 
   <div class="recipe-grid">
 
-    {{ range .Pages }}
+    
+    {{ range .RegularPages }}
       <a href="{{ .RelPermalink }}" class="recipe-card">
 
         {{ with .Params.image }}
