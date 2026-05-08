@@ -1,7 +1,7 @@
 ---
 title: "Brownies"
 slug: "brownies"
-date: 2026-05-08
+date: 2026-05-08T12:00:00+02:00
 
 translationKey: "brownies"
 
