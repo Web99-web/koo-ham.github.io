@@ -1,7 +1,7 @@
 ---
 title: "Pancakes"
 slug: "pancakes"
-date: 2026-04-12
+date: 2026-04-12T12:00:00+02:00
 
 translationKey: "palacinke"
 
