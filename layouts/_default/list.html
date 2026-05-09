@@ -18,9 +18,7 @@ TEST456
     {{ range .RegularPagesRecursive }}
       <a href="{{ .RelPermalink }}" class="recipe-card">
 
-        {{ with .Params.image }}
-          <img src="{{ . | relURL }}" alt="{{ $.Title }}">
-        {{ end }}
+
 
         {{ with .Params.image }}
           <img src="https://web99-web.github.io/koo-ham.github.io{{ . }}"
