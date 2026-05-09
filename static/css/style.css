@@ -564,3 +564,21 @@ nav ul {
   text-align: center;
 }
 /* ------------------------------------------------ */
+
+/* ------------------------------------------------ */
+/* FORCE CENTER TITLE 09.05.2026 */
+
+.recipe-card .card-title {
+  width: 100% !important;
+  display: block !important;
+
+  text-align: center !important;
+
+  margin: 0 auto !important;
+  padding: 18px 20px !important;
+
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+}
+/* ------------------------------------------------ */
