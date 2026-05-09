@@ -555,3 +555,12 @@ nav ul {
   text-decoration: none !important;
 }
 /* ------------------------------------------------ */
+
+/* ------------------------------------------------ */
+/* DODANO 09.05.2026
+   centriranje titlea u karticama */
+
+.recipe-card .card-title {
+  text-align: center;
+}
+/* ------------------------------------------------ */
