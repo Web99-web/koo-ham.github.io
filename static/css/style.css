@@ -582,3 +582,15 @@ nav ul {
   right: auto !important;
 }
 /* ------------------------------------------------ */
+
+.recipe-title {
+  text-align: center;
+  padding: 18px;
+  margin: 0;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #222;
+  background: #e7e3df;
+}
