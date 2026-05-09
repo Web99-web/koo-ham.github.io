@@ -379,6 +379,27 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* GRID ZA RECEPTE * dodano 09.05.2026/
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 2rem;
+}
+
+/* tablet */
+@media (max-width: 900px) {
+  .recipe-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* mobitel */
+@media (max-width: 600px) {
+  .recipe-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* NAVIGATION */
 nav {
