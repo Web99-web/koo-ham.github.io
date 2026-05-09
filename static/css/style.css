@@ -448,3 +448,6 @@ nav ul {
   grid-template-columns: repeat(3, 1fr) !important;
   gap: 24px !important;
 }
+body {
+  background: red !important;
+}
