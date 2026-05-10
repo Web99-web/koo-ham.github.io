@@ -49,7 +49,7 @@
 
       {{/* image */}}
       {{- $src := $p.Params.image | default "/images/placeholder-food.jpg" -}}
-
+        <p>{{ $src }}</p>
       <div class="recipe-card fade-in">
 
         <a href="{{ $p.RelPermalink }}">
