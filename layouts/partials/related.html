@@ -1,0 +1,104 @@
+{{/* layouts/partials/related.html */}}
+
+{{- $current := . -}}
+{{- $tags := .Params.tags | default slice -}}
+
+{{/* svi recipe pageovi */}}
+{{- $all := where site.RegularPages "Section" "recipes" -}}
+
+{{/* makni trenutni recept */}}
+{{- $rel := where $all "Permalink" "ne" $current.Permalink -}}
+
+{{/* isti jezik */}}
+{{- $rel = where $rel "Lang" .Lang -}}
+
+{{/* makni draftove */}}
+{{- $rel = where $rel "Draft" "ne" true -}}
+
+{{/* tag relevance */}}
+{{- if gt (len $tags) 0 -}}
+
+  {{- $byTags := where $rel "Params.tags" "intersect" $tags -}}
+
+  {{- if gt (len $byTags) 0 -}}
+    {{- $rel = $byTags -}}
+  {{- else -}}
+    {{- $rel = $rel.ByDate.Reverse -}}
+  {{- end -}}
+
+{{- else -}}
+
+  {{- $rel = $rel.ByDate.Reverse -}}
+
+{{- end -}}
+
+{{/* max 6 */}}
+{{- $rel = first 6 $rel -}}
+
+{{- if gt (len $rel) 0 -}}
+
+<section class="related-recipes">
+
+  <h2>
+    {{ i18n "youMightAlsoLike" | default "You might also like" }}
+  </h2>
+
+  <div class="recipe-grid">
+
+    {{ range $p := $rel }}
+
+      {{/* image */}}
+      {{- $src := $p.Params.image | default "/images/placeholder-food.jpg" -}}
+
+      <div class="recipe-card fade-in">
+
+        <a href="{{ $p.RelPermalink }}">
+
+          <img
+            src="{{ $src }}"
+            alt="{{ $p.Title }}"
+            loading="lazy"
+            class="card-image"
+          >
+
+        </a>
+
+        <div class="card-body">
+
+          <div class="card-meta">
+
+            <span class="recipe-date">
+              {{ $p.Date.Format "02.01.2006" }}
+            </span>
+
+            {{ with $p.Params.category }}
+              <span class="card-category">
+                {{ . }}
+              </span>
+            {{ end }}
+
+          </div>
+
+          <h3 class="card-title">
+            <a href="{{ $p.RelPermalink }}">
+              {{ $p.Title }}
+            </a>
+          </h3>
+
+          {{ with $p.Summary }}
+            <p class="card-summary">
+              {{ . | plainify | truncate 120 }}
+            </p>
+          {{ end }}
+
+        </div>
+
+      </div>
+
+    {{ end }}
+
+  </div>
+
+</section>
+
+{{ end }}
