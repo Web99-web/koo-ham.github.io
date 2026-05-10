@@ -55,7 +55,7 @@
         <a href="{{ $p.RelPermalink }}">
 
           <img
-            src="{{ $src }}"
+            src="{{ $src | relURL }}"
             alt="{{ $p.Title }}"
             loading="lazy"
             class="card-image"
