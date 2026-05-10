@@ -49,13 +49,13 @@
 
       {{/* image */}}
       {{- $src := $p.Params.image | default "/images/placeholder-food.jpg" -}}
-        <p>{{ $src }}</p>
+       
       <div class="recipe-card fade-in">
 
         <a href="{{ $p.RelPermalink }}">
 
           <img
-            src="{{ $src | absURL }}"
+            src="/koo-ham.github.io{{ $src }}"
             alt="{{ $p.Title }}"
             loading="lazy"
             class="card-image"
