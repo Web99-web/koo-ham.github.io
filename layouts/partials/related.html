@@ -4,7 +4,7 @@
 {{- $tags := .Params.tags | default slice -}}
 
 {{/* svi recipe pageovi */}}
-{{- $all := where site.RegularPages "Section" "recipes" -}}
+{{- $all := site.RegularPages -}}
 
 {{/* makni trenutni recept */}}
 {{- $rel := where $all "Permalink" "ne" $current.Permalink -}}
