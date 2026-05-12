@@ -43,10 +43,10 @@
   </a>
 </section>
 
-  
+
 <!-- SLANO -->
 <section id="slano">
-  <h2>Slano</h2>
+  <h2>{{ i18n "Slano" }}</h2>
 
   <div class="recipe-grid">
 
@@ -70,21 +70,111 @@
 
   </div>
 
-</section>
+  <a href="{{ if eq .Lang "hr" }}{{ .Site.BaseURL }}recepti/{{ else }}{{ .Site.BaseURL }}en/recipes/{{ end }}" class="view-more">
+  {{ if eq .Lang "hr" }}Vidi više →{{ else }}View more →{{ end }}
+  </a>
 
-<!-- OSTALO (placeholder za kasnije) -->
+</section>  
+
+<!-- OSTALO (placeholder za kasnije) --
+<!-- TRADICIONALNO -->
 <section id="tradicionalno">
-  <h2>Tradicionalno</h2>
-</section>
+  <h2>{{ i18n "Tradicionalno" }}</h2>
 
+  <div class="recipe-grid">
+
+    {{ $tradicionalno := where $pages "Params.category" "eq" "tradicionalno" }}
+
+    {{ range first 6 $tradicionalno }}
+
+    <a href="{{ .RelPermalink }}" class="recipe-card fade-in">
+
+      <span class="card-badge">{{ .Params.category }}</span>
+
+      <img src="https://web99-web.github.io/koo-ham.github.io{{ .Params.image }}" 
+           alt="{{ .Title }}" 
+           class="card-image">
+
+      <h3 class="card-title">{{ .Title }}</h3>
+
+    </a>
+
+    {{ end }}
+
+  </div>
+
+  <a href="{{ if eq .Lang "hr" }}{{ .Site.BaseURL }}recepti/{{ else }}{{ .Site.BaseURL }}en/recipes/{{ end }}" class="view-more">
+  {{ if eq .Lang "hr" }}Vidi više →{{ else }}View more →{{ end }}
+  </a>
+
+</section>
+  
+
+<!-- STRANO -->
 <section id="strano">
-  <h2>Strano</h2>
-</section>
+  <h2>{{ i18n "Strano" }}</h2>
 
+  <div class="recipe-grid">
+
+    {{ $strano := where $pages "Params.category" "eq" "strano" }}
+
+    {{ range first 6 $strano }}
+
+    <a href="{{ .RelPermalink }}" class="recipe-card fade-in">
+
+      <span class="card-badge">{{ .Params.category }}</span>
+
+      <img src="https://web99-web.github.io/koo-ham.github.io{{ .Params.image }}" 
+           alt="{{ .Title }}" 
+           class="card-image">
+
+      <h3 class="card-title">{{ .Title }}</h3>
+
+    </a>
+
+    {{ end }}
+
+  </div>
+
+  <a href="{{ if eq .Lang "hr" }}{{ .Site.BaseURL }}recepti/{{ else }}{{ .Site.BaseURL }}en/recipes/{{ end }}" class="view-more">
+  {{ if eq .Lang "hr" }}Vidi više →{{ else }}View more →{{ end }}
+  </a>
+
+</section>
+  
+
+  <!-- SAVJETI -->
 <section id="savjeti">
-  <h2>Savjeti u kuhinji</h2>
-</section>
+  <h2>{{ i18n "Savjeti u kuhinji" }}</h2>
 
+  <div class="recipe-grid">
+
+    {{ $savjeti := where $pages "Params.category" "eq" "savjeti" }}
+
+    {{ range first 6 $savjeti }}
+
+    <a href="{{ .RelPermalink }}" class="recipe-card fade-in">
+
+      <span class="card-badge">{{ .Params.category }}</span>
+
+      <img src="https://web99-web.github.io/koo-ham.github.io{{ .Params.image }}" 
+           alt="{{ .Title }}" 
+           class="card-image">
+
+      <h3 class="card-title">{{ .Title }}</h3>
+
+    </a>
+
+    {{ end }}
+
+  </div>
+
+  <a href="{{ if eq .Lang "hr" }}{{ .Site.BaseURL }}recepti/{{ else }}{{ .Site.BaseURL }}en/recipes/{{ end }}" class="view-more">
+  {{ if eq .Lang "hr" }}Vidi više →{{ else }}View more →{{ end }}
+  </a>
+
+</section>
+  
 </main>
 
 {{ partial "footer.html" . }}
