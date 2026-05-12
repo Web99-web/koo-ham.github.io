@@ -3,6 +3,7 @@ title: "Cheese and Ham Toast"
 slug: "cheese-and-ham-toast"
 date: 2026-05-12T12:00:00+02:00
 category: "savory"
+style: "strano"
 image: "/images/savory/Tost-sir-sunka-cheese-ham-toast.png"
 draft: false
 ---
