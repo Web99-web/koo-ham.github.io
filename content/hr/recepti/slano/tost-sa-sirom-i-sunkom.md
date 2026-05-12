@@ -2,9 +2,30 @@
 title: "Tost sa sirom i šunkom"
 slug: "tost-sa-sirom-i-sunkom"
 date: 2026-05-12T12:00:00+02:00
+
+translationKey: "cheese-ham-toast"
+
 category: "slano"
 style: "strano"
+
+tags:
+  - tost
+  - sir
+  - šunka
+  - sendvič
+  - doručak
+  - brzi-obrok
+
 image: "/images/savory/Tost-sir-sunka-cheese-ham-toast.png"
+
+ingredients:
+  - tost kruh
+  - sir
+  - šunka
+  - maslac
+
+summary: "Jednostavan i hrskav tost sa sirom i šunkom, idealan za doručak ili brzi obrok."
+
 draft: false
 ---
 
