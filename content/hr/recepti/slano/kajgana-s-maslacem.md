@@ -24,6 +24,10 @@ ingredients:
   - sol
   - papar
 
+prep_time: "2 min"
+cook_time: "5 min"
+servings: "2"
+
 summary: "Jednostavna i kremasta kajgana s maslacem, savršena za brzi domaći doručak."
 
 draft: false
