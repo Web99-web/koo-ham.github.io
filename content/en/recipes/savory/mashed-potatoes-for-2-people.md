@@ -2,9 +2,30 @@
 title: "Mashed Potatoes for 2 People"
 slug: "mashed-potatoes-for-2-people"
 date: 2026-05-12T12:00:00+02:00
+
+translationKey: "mashed-potatoes-2-persons"
+
 category: "savory"
-style: "tradicionalno"
+style: "traditional"
+
+tags:
+  - mashed-potatoes
+  - potatoes
+  - side-dish
+  - comfort-food
+  - homemade-food
+  - easy-recipes
+
 image: "/images/savory/Pire-krumpir-2-osobe-mash-potatos.png"
+
+ingredients:
+  - potatoes
+  - butter
+  - milk
+  - salt
+
+summary: "Simple homemade mashed potatoes for two people, creamy and perfect as a side dish for many meals."
+
 draft: false
 ---
 
