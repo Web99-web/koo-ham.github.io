@@ -16,6 +16,10 @@ ingredients:
   - sugar
   - oil
 
+prep_time: "10 min"
+cook_time: "20 min"
+servings: "4"
+
 summary: "Quick homemade pancakes that turn out perfect every time."
 ---
 
