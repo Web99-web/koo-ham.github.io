@@ -2,9 +2,30 @@
 title: "Kajgana s maslacem"
 slug: "kajgana-s-maslacem"
 date: 2026-05-12T12:00:00+02:00
+
+translationKey: "scrambled-eggs-with-butter"
+
 category: "slano"
 style: "tradicionalno"
+
+tags:
+  - kajgana
+  - jaja
+  - doručak
+  - maslac
+  - domaća-kuhinja
+  - jednostavni-recepti
+
 image: "/images/savory/Kajgana-scrambled-eggs.png"
+
+ingredients:
+  - jaja
+  - maslac
+  - sol
+  - papar
+
+summary: "Jednostavna i kremasta kajgana s maslacem, savršena za brzi domaći doručak."
+
 draft: false
 ---
 
