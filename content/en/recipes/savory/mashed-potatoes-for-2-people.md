@@ -3,6 +3,7 @@ title: "Mashed Potatoes for 2 People"
 slug: "mashed-potatoes-for-2-people"
 date: 2026-05-12T12:00:00+02:00
 category: "savory"
+style: "tradicionalno"
 image: "/images/savory/Pire-krumpir-2-osobe-mash-potatos.png"
 draft: false
 ---
