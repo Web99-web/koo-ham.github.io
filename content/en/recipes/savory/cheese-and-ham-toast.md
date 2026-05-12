@@ -6,7 +6,7 @@ date: 2026-05-12T12:00:00+02:00
 translationKey: "cheese-ham-toast"
 
 category: "slano"
-style: "tradicionalno"
+style: "strano"
 
 tags:
   - toast
