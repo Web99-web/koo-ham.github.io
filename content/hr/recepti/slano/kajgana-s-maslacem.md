@@ -3,6 +3,7 @@ title: "Kajgana s maslacem"
 slug: "kajgana-s-maslacem"
 date: 2026-05-12T12:00:00+02:00
 category: "slano"
+style: "tradicionalno"
 image: "/images/savory/Kajgana-scrambled-eggs.png"
 draft: false
 ---
