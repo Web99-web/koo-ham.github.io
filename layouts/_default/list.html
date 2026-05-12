@@ -1,5 +1,6 @@
 {{ define "main" }}
 TEST456
+
 <section class="container">
 
   <h1>{{ .Title }}</h1>
@@ -8,27 +9,39 @@ TEST456
     <p class="section-desc">{{ .Content }}</p>
   {{ end }}
 
-{{ with .Params.image }}
-  <img src="{{ printf "%s%s" $.Site.BaseURL (strings.TrimPrefix "/" .) }}" class="category-hero">
-{{ end }}
+  {{ with .Params.image }}
+    <img src="{{ printf "%s%s" $.Site.BaseURL (strings.TrimPrefix "/" .) }}" class="category-hero">
+  {{ end }}
+
+  {{/* DEFAULT */}}
+  {{ $pages := .RegularPagesRecursive }}
+
+  {{/* TRADICIONALNO */}}
+  {{ if or (eq .Title "Tradicionalno") (eq .Title "Traditional") }}
+    {{ $pages = where .Site.RegularPages "Params.style" "eq" "tradicionalno" }}
+  {{ end }}
+
+  {{/* STRANO */}}
+  {{ if or (eq .Title "Strano") (eq .Title "International") }}
+    {{ $pages = where .Site.RegularPages "Params.style" "eq" "strano" }}
+  {{ end }}
 
   <div class="recipe-grid">
 
-    {{ range .RegularPagesRecursive }}
+    {{ range $pages }}
+
       <a href="{{ .RelPermalink }}" class="recipe-card">
-
-
 
         {{ with .Params.image }}
           <img src="https://web99-web.github.io/koo-ham.github.io{{ . }}"
-           alt="{{ $.Title }}"
-           class="card-image">
-     
-      {{ end }}
-        
+               alt="{{ $.Title }}"
+               class="card-image">
+        {{ end }}
+
         <h3 class="recipe-title">{{ .Title }}</h3>
 
       </a>
+
     {{ end }}
 
   </div>
