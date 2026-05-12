@@ -83,7 +83,7 @@
 
   <div class="recipe-grid">
 
-    {{ $tradicionalno := where $pages "Params.category" "eq" "tradicionalno" }}
+    {{ $tradicionalno := where $pages "Params.style" "eq" "tradicionalno" }}
 
     {{ range first 6 $tradicionalno }}
 
