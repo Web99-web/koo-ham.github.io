@@ -23,6 +23,11 @@ ingredients:
   - sir
   - šunka
   - maslac
+  - brzi obrok
+
+prep_time: "2 min"
+cook_time: "5 min"
+servings: "2"
 
 summary: "Jednostavan i hrskav tost sa sirom i šunkom, idealan za doručak ili brzi obrok."
 
