@@ -24,6 +24,10 @@ ingredients:
   - mlijeko
   - sol
 
+prep_time: "10 min"
+cook_time: "20 min"
+servings: "2"
+
 summary: "Jednostavan domaći pire krumpir za dvije osobe, kremast i savršen kao prilog uz mnoga jela."
 
 draft: false
