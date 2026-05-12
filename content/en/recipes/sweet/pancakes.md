@@ -2,10 +2,9 @@
 title: "Pancakes"
 slug: "pancakes"
 date: 2026-04-12T12:00:00+02:00
-
 translationKey: "palacinke"
-
 category: "slatko"
+style: "tradicionalno"
 tags: ["quick", "breakfast"]
 
 image: "/images/Palacinke-creps.png"
