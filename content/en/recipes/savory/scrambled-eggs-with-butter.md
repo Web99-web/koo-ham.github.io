@@ -24,6 +24,10 @@ ingredients:
   - salt
   - pepper
 
+prep_time: "2 min"
+cook_time: "5 min"
+servings: "2"
+
 summary: "Simple and creamy scrambled eggs with butter, perfect for a quick homemade breakfast."
 
 draft: false
