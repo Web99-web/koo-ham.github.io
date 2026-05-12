@@ -3,6 +3,7 @@ title: "Scrambled Eggs with Butter"
 slug: "scrambled-eggs-with-butter"
 date: 2026-05-12T12:00:00+02:00
 category: "savory"
+style: "tradicionalno"
 image: "/images/savory/Kajgana-scrambled-eggs.png"
 draft: false
 ---
