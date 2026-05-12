@@ -16,6 +16,10 @@ ingredients:
   - mlijeko
   - med
 
+prep_time: "5 min"
+cook_time: "0 min"
+servings: "2"
+
 summary: "Svjež i kremast smoothie od jagoda i banane savršen za doručak ili brzo ljetno osvježenje."
 ---
 
