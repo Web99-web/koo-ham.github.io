@@ -143,34 +143,57 @@
 </section>
   
 
-  <!-- SAVJETI -->
+<!-- SAVJETI -->
 <section id="savjeti">
   <h2>{{ i18n "savjeti" }}</h2>
 
   <div class="recipe-grid">
 
-    {{ $savjeti := where $pages "Params.category" "eq" "savjeti" }}
+    {{ if eq .Lang "hr" }}
+      {{ $savjeti := where $pages "Params.category" "eq" "savjeti-u-kuhinji" }}
 
-    {{ range first 6 $savjeti }}
+      {{ range first 6 $savjeti }}
 
-    <a href="{{ .RelPermalink }}" class="recipe-card fade-in">
+      <a href="{{ .RelPermalink }}" class="recipe-card fade-in">
 
-      <span class="card-badge">{{ .Params.category }}</span>
+        <span class="card-badge">{{ .Params.category }}</span>
 
-      <img src="https://web99-web.github.io/koo-ham.github.io{{ .Params.image }}" 
-           alt="{{ .Title }}" 
-           class="card-image">
+        <img src="https://web99-web.github.io/koo-ham.github.io{{ .Params.image }}" 
+             alt="{{ .Title }}" 
+             class="card-image">
 
-      <h3 class="card-title">{{ .Title }}</h3>
+        <h3 class="card-title">{{ .Title }}</h3>
 
-    </a>
+      </a>
+
+      {{ end }}
+
+    {{ else }}
+
+      {{ $savjeti := where $pages "Params.category" "eq" "kitchen-tips" }}
+
+      {{ range first 6 $savjeti }}
+
+      <a href="{{ .RelPermalink }}" class="recipe-card fade-in">
+
+        <span class="card-badge">{{ .Params.category }}</span>
+
+        <img src="https://web99-web.github.io/koo-ham.github.io{{ .Params.image }}" 
+             alt="{{ .Title }}" 
+             class="card-image">
+
+        <h3 class="card-title">{{ .Title }}</h3>
+
+      </a>
+
+      {{ end }}
 
     {{ end }}
 
   </div>
 
   <a href="{{ if eq .Lang "hr" }}{{ .Site.BaseURL }}recepti/{{ else }}{{ .Site.BaseURL }}en/recipes/{{ end }}" class="view-more">
-  {{ if eq .Lang "hr" }}Vidi više →{{ else }}View more →{{ end }}
+    {{ if eq .Lang "hr" }}Vidi više →{{ else }}View more →{{ end }}
   </a>
 
 </section>
