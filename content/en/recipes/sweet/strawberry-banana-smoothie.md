@@ -2,10 +2,9 @@
 title: "Strawberry Banana Smoothie"
 slug: "strawberry-banana-smoothie"
 date: 2026-05-09T12:00:00+02:00
-
 translationKey: "strawberry-banana-smoothie"
-
 category: "slatko"
+style: "strano"
 tags: ["smoothie", "strawberry", "banana"]
 
 image: "/images/sweet/Strawberry-Banana-Smoothie.png"
