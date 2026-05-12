@@ -16,6 +16,10 @@ ingredients:
   - šećer
   - ulje
 
+prep_time: "10 min"
+cook_time: "20 min"
+servings: "4"
+
 summary: "Brze domaće palačinke koje uspiju savršeno svaki put."
 ---
 
