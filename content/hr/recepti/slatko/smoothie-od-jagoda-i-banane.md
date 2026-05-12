@@ -2,10 +2,9 @@
 title: "Smoothie od jagoda i banane"
 slug: "smoothie-od-jagoda-i-banane"
 date: 2026-05-09T12:00:00+02:00
-
 translationKey: "strawberry-banana-smoothie"
-
 category: "slatko"
+style: "strano"
 tags: ["smoothie", "jagode", "banana"]
 
 image: "/images/sweet/Strawberry-Banana-Smoothie.png"
