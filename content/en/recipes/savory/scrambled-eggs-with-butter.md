@@ -2,9 +2,30 @@
 title: "Scrambled Eggs with Butter"
 slug: "scrambled-eggs-with-butter"
 date: 2026-05-12T12:00:00+02:00
+
+translationKey: "scrambled-eggs-with-butter"
+
 category: "savory"
-style: "tradicionalno"
+style: "traditional"
+
+tags:
+  - scrambled-eggs
+  - eggs
+  - breakfast
+  - butter
+  - homemade-food
+  - easy-recipes
+
 image: "/images/savory/Kajgana-scrambled-eggs.png"
+
+ingredients:
+  - eggs
+  - butter
+  - salt
+  - pepper
+
+summary: "Simple and creamy scrambled eggs with butter, perfect for a quick homemade breakfast."
+
 draft: false
 ---
 
