@@ -5,8 +5,8 @@ date: 2026-05-12T12:00:00+02:00
 
 translationKey: "mashed-potatoes-2-persons"
 
-category: "savory"
-style: "traditional"
+category: "slano"
+style: "tradicionalno"
 
 tags:
   - mashed-potatoes
