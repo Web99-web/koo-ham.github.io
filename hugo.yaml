@@ -29,4 +29,6 @@ outputs:
   section:
     - HTML
 
-
+taxonomies:
+  category: "categories"
+  style: "styles"
