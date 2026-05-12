@@ -1,0 +1,26 @@
+---
+title: "Cheese and Ham Toast"
+slug: "cheese-and-ham-toast"
+date: 2026-05-12T12:00:00+02:00
+category: "savory"
+image: "/images/savory/Tost-sir-sunka-cheese-ham-toast.png"
+draft: false
+---
+
+# Cheese and Ham Toast
+
+One of the simplest hot sandwiches, perfect for breakfast or a quick meal.
+
+## Ingredients
+
+- 4 slices of toast bread
+- 2 slices of cheese
+- 2 slices of ham
+- a little butter
+
+## Preparation
+
+1. Spread a thin layer of butter on the outside of the toast bread.
+2. Place the cheese and ham inside.
+3. Toast in a sandwich maker or pan for a few minutes until golden and crispy.
+4. Serve warm.
