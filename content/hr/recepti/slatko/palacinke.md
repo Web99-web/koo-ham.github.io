@@ -2,10 +2,9 @@
 title: "Palačinke"
 slug: "palacinke"
 date: 2026-04-12T12:00:00+02:00
-
 translationKey: "palacinke"
-
 category: "slatko"
+style: "tradicionalno"
 tags: ["brzo", "doručak"]
 
 image: "/images/Palacinke-creps.png"
