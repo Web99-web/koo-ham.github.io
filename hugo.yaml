@@ -28,3 +28,7 @@ outputs:
     - HTML
   section:
     - HTML
+
+taxonomies:
+  category: "categories"
+  style: "styles"
