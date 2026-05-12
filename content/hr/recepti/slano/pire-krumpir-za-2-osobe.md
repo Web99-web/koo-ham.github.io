@@ -3,7 +3,7 @@ title: "Pire krumpir za 2 osobe"
 slug: "pire-krumpir-za-2-osobe"
 date: 2026-05-12T12:00:00+02:00
 category: "slano"
-image: "/images/pire-krumpir.jpg"
+image: "/images/savory/Pire-krumpir-2-osobe-mash-potatos.png"
 draft: false
 ---
 
