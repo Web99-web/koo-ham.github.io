@@ -16,6 +16,10 @@ ingredients:
   - eggs
   - flour
 
+prep_time: "15 min"
+cook_time: "30 min"
+servings: "4-6"
+
 summary: "Rich and fudgy homemade brownies with deep chocolate flavor."
 ---
 
