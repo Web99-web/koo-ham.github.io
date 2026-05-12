@@ -16,6 +16,10 @@ ingredients:
   - milk
   - honey
 
+prep_time: "5 min"
+cook_time: "0 min"
+servings: "2"
+
 summary: "Fresh and creamy strawberry banana smoothie perfect for breakfast or a quick summer drink."
 ---
 
