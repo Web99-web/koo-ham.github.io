@@ -24,6 +24,10 @@ ingredients:
   - ham
   - butter
 
+prep_time: "2 min"
+cook_time: "5 min"
+servings: "2"
+
 summary: "A quick and crispy cheese and ham toast, perfect for breakfast or a fast meal."
 
 draft: false
