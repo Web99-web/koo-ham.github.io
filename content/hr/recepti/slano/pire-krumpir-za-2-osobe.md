@@ -2,9 +2,30 @@
 title: "Pire krumpir za 2 osobe"
 slug: "pire-krumpir-za-2-osobe"
 date: 2026-05-12T12:00:00+02:00
+
+translationKey: "mashed-potatoes-2-persons"
+
 category: "slano"
 style: "tradicionalno"
+
+tags:
+  - pire-krumpir
+  - krumpir
+  - prilog
+  - domaća-kuhinja
+  - comfort-food
+  - jednostavni-recepti
+
 image: "/images/savory/Pire-krumpir-2-osobe-mash-potatos.png"
+
+ingredients:
+  - krumpir
+  - maslac
+  - mlijeko
+  - sol
+
+summary: "Jednostavan domaći pire krumpir za dvije osobe, kremast i savršen kao prilog uz mnoga jela."
+
 draft: false
 ---
 
