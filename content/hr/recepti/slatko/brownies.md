@@ -16,6 +16,10 @@ ingredients:
   - jaja
   - brašno
 
+prep_time: "15 min"
+cook_time: "30 min"
+servings: "4-6"
+
 summary: "Bogati i sočni domaći brownies kolači s intenzivnim okusom čokolade."
 ---
 
