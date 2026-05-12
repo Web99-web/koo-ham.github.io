@@ -24,6 +24,10 @@ ingredients:
   - milk
   - salt
 
+prep_time: "10 min"
+cook_time: "20 min"
+servings: "2"
+
 summary: "Simple homemade mashed potatoes for two people, creamy and perfect as a side dish for many meals."
 
 draft: false
