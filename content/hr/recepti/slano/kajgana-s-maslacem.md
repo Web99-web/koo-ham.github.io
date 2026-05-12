@@ -15,6 +15,7 @@ tags:
   - maslac
   - domaća-kuhinja
   - jednostavni-recepti
+  - brzi obrok
 
 image: "/images/savory/Kajgana-scrambled-eggs.png"
 
