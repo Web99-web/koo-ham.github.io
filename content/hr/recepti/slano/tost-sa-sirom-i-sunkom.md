@@ -3,6 +3,7 @@ title: "Tost sa sirom i šunkom"
 slug: "tost-sa-sirom-i-sunkom"
 date: 2026-05-12T12:00:00+02:00
 category: "slano"
+style: "strano"
 image: "/images/savory/Tost-sir-sunka-cheese-ham-toast.png"
 draft: false
 ---
