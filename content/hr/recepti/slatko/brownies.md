@@ -2,10 +2,9 @@
 title: "Brownies"
 slug: "brownies"
 date: 2026-05-08T12:00:00+02:00
-
 translationKey: "brownies"
-
 category: "slatko"
+style: "strano"
 tags: ["čokolada", "desert"]
 
 image: "/images/sweet/brownies.png"
