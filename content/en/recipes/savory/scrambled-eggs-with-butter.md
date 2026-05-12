@@ -15,6 +15,7 @@ tags:
   - butter
   - homemade-food
   - easy-recipes
+  - quick meal
 
 image: "/images/savory/Kajgana-scrambled-eggs.png"
 
