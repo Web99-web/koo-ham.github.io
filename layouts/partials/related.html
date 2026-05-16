@@ -50,51 +50,47 @@
       {{/* image */}}
       {{- $src := $p.Params.image | default "/images/placeholder-food.jpg" -}}
        
-      <div class="recipe-card fade-in">
 
-        <a href="{{ $p.RelPermalink }}">
+    <a href="{{ $p.RelPermalink }}" class="recipe-card fade-in">
 
-          <img
-            src="/koo-ham.github.io{{ $src }}"
-            alt="{{ $p.Title }}"
-            loading="lazy"
-            class="card-image"
-          >
+  <img
+    src="/koo-ham.github.io{{ $src }}"
+    alt="{{ $p.Params.image_alt | default $p.Title }}"
+    loading="lazy"
+    class="card-image"
+  >
 
-        </a>
+  <div class="card-body">
 
-        <div class="card-body">
+    <div class="card-meta">
 
-          <div class="card-meta">
+      <span class="recipe-date">
+        {{ $p.Date.Format "02.01.2006" }}
+      </span>
 
-            <span class="recipe-date">
-              {{ $p.Date.Format "02.01.2006" }}
-            </span>
+      {{ with $p.Params.category }}
+        <span class="card-category">
+          {{ . }}
+        </span>
+      {{ end }}
 
-            {{ with $p.Params.category }}
-              <span class="card-category">
-                {{ . }}
-              </span>
-            {{ end }}
+    </div>
 
-          </div>
+    <h3 class="card-title">
+      {{ $p.Title }}
+    </h3>
 
-          <h3 class="card-title">
-            <a href="{{ $p.RelPermalink }}">
-              {{ $p.Title }}
-            </a>
-          </h3>
+    {{ with $p.Summary }}
+      <p class="card-summary">
+        {{ . | plainify | truncate 120 }}
+      </p>
+    {{ end }}
 
-          {{ with $p.Summary }}
-            <p class="card-summary">
-              {{ . | plainify | truncate 120 }}
-            </p>
-          {{ end }}
+  </div>
 
-        </div>
+</a>
 
-      </div>
-
+    
     {{ end }}
 
   </div>
