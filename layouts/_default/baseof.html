@@ -68,14 +68,32 @@
     "name": "Koo-ham"
   },
 
-  <!-- VRIJEME PRIPREME -->
-  {{ with .Params.prep_time_schema }}
-  "prepTime": "{{ . }}",
+  <!-- VRIJEME PRIPREME - PREP TIME -->
+  {{ with .Params.prep_time }}
+
+  {{ $prep := lower . }}
+
+  {{ $prepHours := replaceRE `.*?([0-9]+)\s*(sat|sata|sati).*` "$1" $prep }}
+  {{ $prepMinutes := replaceRE `.*?([0-9]+)\s*min.*` "$1" $prep }}
+
+  "prepTime": "PT{{ if in $prep "sat" }}{{ $prepHours }}H{{ end }}{{ if in $prep "min" }}{{ $prepMinutes }}M{{ end }}",
+
   {{ end }}
 
-  <!-- VRIJEME KUHANJA -->
+  <!-- VRIJEME KUHANJA - COOK TIME -->
   {{ with .Params.cook_time_schema }}
   "cookTime": "{{ . }}",
+  {{ end }}
+
+  {{ with .Params.cook_time }}
+
+  {{ $cook := lower . }}
+
+  {{ $cookHours := replaceRE `.*?([0-9]+)\s*(sat|sata|sati).*` "$1" $cook }}
+  {{ $cookMinutes := replaceRE `.*?([0-9]+)\s*min.*` "$1" $cook }}
+
+  "cookTime": "PT{{ if in $cook "sat" }}{{ $cookHours }}H{{ end }}{{ if in $cook "min" }}{{ $cookMinutes }}M{{ end }}",
+
   {{ end }}
 
   <!-- BROJ PORCIJA -->
