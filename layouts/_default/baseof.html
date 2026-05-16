@@ -9,6 +9,36 @@
 {{ else }}
 <meta name="description" content="{{ .Site.Title }}">
 {{ end }}
+
+
+  <!-- Open Graph -->
+
+<meta property="og:title" content="{{ .Title }}">
+
+{{ if .Params.summary }}
+<meta property="og:description" content="{{ .Params.summary }}">
+{{ end }}
+
+{{ with .Params.image }}
+<meta property="og:image" content="{{ . | absURL }}">
+{{ end }}
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{ .Permalink }}">
+
+<!-- Twitter -->
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }}">
+
+{{ if .Params.summary }}
+<meta name="twitter:description" content="{{ .Params.summary }}">
+{{ end }}
+
+{{ with .Params.image }}
+<meta name="twitter:image" content="{{ . | absURL }}">
+{{ end }}
+
   
   <title>{{ .Title }}</title>
 
