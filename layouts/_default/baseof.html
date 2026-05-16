@@ -39,7 +39,60 @@
 <meta name="twitter:image" content="{{ . | absURL }}">
 {{ end }}
 
-  
+
+  <!-- RECIPE SCHEMA -->
+
+{{ if .Params.ingredients }}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Recipe",
+
+  <!-- NASLOV RECEPTA -->
+  "name": "{{ .Title }}",
+
+  <!-- OPIS RECEPTA -->
+  {{ with .Params.summary }}
+  "description": "{{ . }}",
+  {{ end }}
+
+  <!-- GLAVNA SLIKA RECEPTA -->
+  {{ with .Params.image }}
+  "image": "https://web99-web.github.io/koo-ham.github.io{{ . }}",
+  {{ end }}
+
+  <!-- AUTOR -->
+  "author": {
+    "@type": "Organization",
+    "name": "Koo-ham"
+  },
+
+  <!-- VRIJEME PRIPREME -->
+  {{ with .Params.prep_time_schema }}
+  "prepTime": "{{ . }}",
+  {{ end }}
+
+  <!-- VRIJEME KUHANJA -->
+  {{ with .Params.cook_time_schema }}
+  "cookTime": "{{ . }}",
+  {{ end }}
+
+  <!-- BROJ PORCIJA -->
+  {{ with .Params.servings }}
+  "recipeYield": "{{ . }}",
+  {{ end }}
+
+  <!-- SASTOJCI -->
+  "recipeIngredient": [
+    {{ range $index, $item := .Params.ingredients }}
+      "{{ $item }}"{{ if ne (add $index 1) (len $.Params.ingredients) }},{{ end }}
+    {{ end }}
+  ]
+}
+</script>
+
+{{ end }}
   <title>{{ .Title }}</title>
 
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
