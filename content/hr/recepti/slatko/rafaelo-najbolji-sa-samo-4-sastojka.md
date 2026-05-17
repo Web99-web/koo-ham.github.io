@@ -1,6 +1,7 @@
 ---
 title: "Rafaelo – najbolji sa samo 4 sastojka"
 slug: "rafaelo-najbolji-sa-samo-4-sastojka"
+url: "/recepti/rafaelo-najbolji-sa-samo-4-sastojka/"
 date: 2025-04-16T12:00:00+02:00
 translationKey: "rafaelo-najbolji-sa-samo-4-sastojka"
 category: "slatko"
