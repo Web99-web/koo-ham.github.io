@@ -48,7 +48,21 @@ TEST456
 
   </div>
 
-    {{ template "_internal/pagination.html" $paginator }}  
+    <div class="pagination">
+
+  {{ if $paginator.HasPrev }}
+    <a href="{{ $paginator.Prev.URL }}">← Prev</a>
+  {{ end }}
+
+  <span>
+    Page {{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}
+  </span>
+
+  {{ if $paginator.HasNext }}
+    <a href="{{ $paginator.Next.URL }}">Next →</a>
+  {{ end }}
+
+</div>
   
   </section>
 
