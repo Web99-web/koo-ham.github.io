@@ -26,6 +26,8 @@ markup:
 outputs:
   home:
     - HTML
+    - JSON
+    
   section:
     - HTML
 
