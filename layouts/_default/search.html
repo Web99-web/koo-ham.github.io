@@ -1,26 +1,75 @@
 {{ define "main" }}
 
-<section class="container search-page">
-
-  <h1>{{ .Title }}</h1>
-
-  <div id="search"></div>
-
-</section>
-
-<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-<script src="/pagefind/pagefind-ui.js"></script>
-
-<script>
-window.addEventListener('DOMContentLoaded', () => {
-  new PagefindUI({
-    element: "#search",
-    showSubResults: true,
-    translations: {
-      placeholder: "{{ if eq .Lang \"hr\" }}Pretraži recepte...{{ else }}Search recipes...{{ end }}"
+    if(!items || !items.length){
+      grid.innerHTML = '<div style="opacity:.7;padding:6px 2px;">'+noResultsText+'</div>';
+      return;
     }
+
+    grid.innerHTML = items.map(cardHTML).join('');
+  }
+
+  function search(q){
+
+    if(!DATA){ return; }
+
+    q = (q||'').toLowerCase().trim();
+
+    if(!q){
+      grid.innerHTML='';
+      return;
+    }
+
+    var words = q.split(/\s+/);
+
+    var res = DATA.filter(function(it){
+
+      var hay = (
+        (it.title || '') + ' ' +
+        (it.summary || '') + ' ' +
+        (it.tags || []).join(' ')
+      ).toLowerCase();
+
+      return words.every(function(w){
+        return hay.indexOf(w) >= 0;
+      });
+
+    }).slice(0,30);
+
+    render(res);
+  }
+
+  var lang = document.documentElement.lang;
+
+  var indexPath = '/index.json';
+
+  if(lang === 'en'){
+    indexPath = '/en/index.json';
+  }
+
+  fetch(indexPath, {credentials:'omit'})
+
+  .then(function(r){ return r.json(); })
+
+  .then(function(j){
+    DATA = j;
+  })
+
+  .catch(function(){
+
+    grid.innerHTML = '<div style="color:red">Search index error.</div>';
+
   });
-});
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    search(input.value);
+  });
+
+  input.addEventListener('input', function(){
+    search(input.value);
+  });
+
+})();
 </script>
 
 {{ end }}
