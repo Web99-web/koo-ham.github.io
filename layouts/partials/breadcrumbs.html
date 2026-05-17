@@ -17,9 +17,9 @@
   {{ with .Params.category }}
 
     ›
-    
+
     <span>
-      {{ . }}
+      {{ i18n . | default . }}
     </span>
 
   {{ end }}
