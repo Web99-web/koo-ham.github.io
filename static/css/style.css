@@ -700,3 +700,31 @@ nav ul {
   transform:translateY(-2px);
   opacity:.9;
 }
+
+/* ------------------------------ */
+/* Pagination */
+
+.pagination{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:20px;
+  margin:40px 0;
+  flex-wrap:wrap;
+}
+
+.pagination a{
+  padding:10px 16px;
+  background:#4b3d36;
+  color:#fff;
+  text-decoration:none;
+  border-radius:8px;
+}
+
+.pagination a:hover{
+  opacity:.9;
+}
+
+.pagination span{
+  font-weight:600;
+}
