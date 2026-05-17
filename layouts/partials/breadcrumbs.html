@@ -1,0 +1,31 @@
+<nav class="breadcrumbs">
+
+  <a href="{{ "/" | relLangURL }}">
+    {{ if eq .Lang "hr" }}Početna{{ else }}Home{{ end }}
+  </a>
+
+  {{ if eq .Lang "hr" }}
+
+    › <a href="/koo-ham.github.io/recepti/">Recepti</a>
+
+  {{ else }}
+
+    › <a href="/koo-ham.github.io/en/recipes/">Recipes</a>
+
+  {{ end }}
+
+  {{ with .Params.category }}
+
+    ›
+    
+    <span>
+      {{ . }}
+    </span>
+
+  {{ end }}
+
+  ›
+  
+  <span>{{ .Title }}</span>
+
+</nav>
