@@ -48,11 +48,9 @@ TEST456
 
   </div>
 
-  {{ with $paginator }}
-    {{ template "_internal/pagination.html" . }}
-  {{ end }}
+    {{ template "_internal/pagination.html" $paginator }}  
   
-</section>
+  </section>
 
 {{ partial "social.html" . }}
 
