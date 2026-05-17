@@ -7,6 +7,11 @@
 
     {{ partial "nav.html" . }}   <!-- 🔥 OVO POVEZUJE NAV -->
 
+    <!-- SEARCH LINK -->
+
+    <a href="{{ if eq .Lang "hr" }}/search/{{ else }}/en/search/{{ end }}">
+      {{ if eq .Lang "hr" }}Pretraga{{ else }}Search{{ end }}
+    </a>
     
     <div class="lang-switch">
     {{ if eq .Lang "hr" }}
