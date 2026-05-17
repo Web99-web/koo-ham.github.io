@@ -1,1 +1,31 @@
+<footer class="site-footer">
 
+  <div class="footer-inner">
+
+    <p>
+      © 2026 Koo-ham — {{ if eq .Lang "hr" }}Sva prava pridržana{{ else }}All rights reserved{{ end }}
+    </p>
+
+    <nav class="footer-links">
+
+      <a href="{{ if eq .Lang "hr" }}/about/{{ else }}/en/about/{{ end }}">
+        {{ if eq .Lang "hr" }}O nama{{ else }}About{{ end }}
+      </a>
+
+      <a href="{{ if eq .Lang "hr" }}/contact/{{ else }}/en/contact/{{ end }}">
+        {{ if eq .Lang "hr" }}Kontakt{{ else }}Contact{{ end }}
+      </a>
+
+      <a href="{{ if eq .Lang "hr" }}/privacy/{{ else }}/en/privacy/{{ end }}">
+        Privacy
+      </a>
+
+      <a href="{{ if eq .Lang "hr" }}/disclaimer/{{ else }}/en/disclaimer/{{ end }}">
+        Disclaimer
+      </a>
+
+    </nav>
+
+  </div>
+
+</footer>
