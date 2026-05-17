@@ -26,9 +26,11 @@ TEST456
     {{ $pages = where .Site.RegularPages "Params.style" "eq" "strano" }}
   {{ end }}
 
+  {{ $paginator := .Paginate $pages 12 }}
+  
   <div class="recipe-grid">
 
-    {{ range $pages }}
+    {{ range $paginator.Pages }}
 
       <a href="{{ .RelPermalink }}" class="recipe-card">
 
