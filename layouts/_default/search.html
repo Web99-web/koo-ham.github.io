@@ -7,3 +7,20 @@
   <div id="search"></div>
 
 </section>
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  new PagefindUI({
+    element: "#search",
+    showSubResults: true,
+    translations: {
+      placeholder: "{{ if eq .Lang \"hr\" }}Pretraži recepte...{{ else }}Search recipes...{{ end }}"
+    }
+  });
+});
+</script>
+
+{{ end }}
