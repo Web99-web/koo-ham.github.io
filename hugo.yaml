@@ -2,6 +2,8 @@ baseURL: "https://web99-web.github.io/koo-ham.github.io/"
 languageCode: "hr"
 title: "Koo-ham"
 
+enableRobotsTXT: true
+
 defaultContentLanguage: "hr"
 
 
