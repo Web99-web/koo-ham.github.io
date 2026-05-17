@@ -26,7 +26,7 @@ summary: "Najbrži i najfiniji domaći Rafaelo sa samo 4 sastojka. Bez pečenja 
 
 Ovo je najbrži i najbolji Rafaelo koji ćete raditi. Sa samo 4 sastojka. Bez pečenja.
 
-![Rafaelo kuglice](/images/sweet/Rafaelo%202.jpg)
+![Rafaelo kuglice](/images/sweet/Rafaelo-2.jpg)
 
 ## Sastojci
 
@@ -48,7 +48,7 @@ Ako želite manju količinu, sve sastojke jednostavno smanjite.
 7. Po želji u svaku kuglicu stavite badem ili lješnjak.  
 8. Kuglice uvaljajte u preostalih 50 g kokosa.  
 
-![Domaći Rafaelo](/images/sweet/Rafaelo%201.jpg)
+![Domaći Rafaelo](/images/sweet/Rafaelo-1.jpg)
 
 ## Savjet
 
