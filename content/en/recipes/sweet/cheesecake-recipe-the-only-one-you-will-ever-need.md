@@ -4,8 +4,8 @@ slug: "cheesecake-recipe-the-only-one-you-will-ever-need"
 url: "/en/recipes/cheesecake-recipe-the-only-one-you-will-ever-need/"
 date: 2025-03-11T12:00:00+02:00
 translationKey: "recept-za-cheesecake-jedini-koji-cete-ikada-trebati"
-category: "sweet"
-style: "international"
+category: "slatko"
+style: "strano"
 tags: ["cheesecake", "cake", "dessert", "cream cheese", "cake recipe"]
 
 image: "/images/sweet/Cheesecake,%20jedini%20koji%20ćete%20ikada%20trebati.jpg"
