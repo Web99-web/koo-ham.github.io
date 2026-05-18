@@ -14,7 +14,7 @@ tags:
   - easy-recipes
   - noodles
 
-image: "/images/savory/juha-od-rajcice-tomato-soup..jpg"
+image: "/images/savory/juha-od-rajcice-tomato-soup.jpg"
 
 ingredients:
   - tomato
