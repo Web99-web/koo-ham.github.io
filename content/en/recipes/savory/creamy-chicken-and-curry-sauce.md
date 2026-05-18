@@ -4,8 +4,8 @@ slug: "creamy-chicken-and-curry-sauce"
 url: "/en/recipes/creamy-chicken-and-curry-sauce/"
 date: 2024-09-13T12:00:00+02:00
 translationKey: "kremasti-sos-od-piletine-i-currya"
-category: "savory"
-style: "international"
+category: "slano"
+style: "strano"
 tags:
   - chicken
   - curry
