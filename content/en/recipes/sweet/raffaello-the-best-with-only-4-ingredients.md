@@ -4,8 +4,8 @@ slug: "raffaello-the-best-with-only-4-ingredients"
 url: "/en/recipes/raffaello-the-best-with-only-4-ingredients/"
 date: 2025-04-16T12:00:00+02:00
 translationKey: "rafaelo-najbolji-sa-samo-4-sastojka"
-category: "sweet"
-style: "international"
+category: "slatko"
+style: "strano"
 tags: ["raffaello", "coconut", "white chocolate", "dessert balls", "dessert", "no bake"]
 
 image: "/images/sweet/Rafaelo.jpg"
