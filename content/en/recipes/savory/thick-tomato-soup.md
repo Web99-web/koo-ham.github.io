@@ -3,7 +3,8 @@ title: "Thick Tomato Soup"
 slug: "thick-tomato-soup"
 url: "/en/recipes/thick-tomato-soup/"
 date: 2024-06-25T12:00:00+02:00
-translationKey: "juha-od-rajcice-gusta"
+
+translationKey: "thick-tomato-soup-hr"
 category: "slano"
 style: "tradicionalno"
 tags:
