@@ -4,8 +4,8 @@ slug: "pumpkin-and-curry-soup"
 url: "/en/recipes/pumpkin-and-curry-soup/"
 date: 2025-03-11T12:00:00+02:00
 translationKey: "juha-od-bundeve-i-curry-a"
-category: "savory"
-style: "international"
+category: "slano"
+style: "strano"
 tags: ["soup", "pumpkin", "curry", "butternut squash", "cream soup"]
 
 image: "/images/savory/Juha-od-bundeve-curry.jpg"
