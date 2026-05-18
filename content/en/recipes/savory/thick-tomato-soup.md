@@ -4,7 +4,7 @@ slug: "thick-tomato-soup"
 url: "/en/recipes/thick-tomato-soup/"
 date: 2024-06-25T12:00:00+02:00
 
-translationKey: "thick-tomato-soup-hr"
+translationKey: "komplicirano12345"
 category: "slano"
 style: "tradicionalno"
 tags:
