@@ -4,8 +4,8 @@ slug: "professional-pancakes"
 url: "/en/recipes/professional-pancakes/"
 date: 2024-06-12T12:00:00+02:00
 translationKey: "profi-palacinke"
-category: "sweet"
-style: "international"
+category: "slatko"
+style: "strano"
 tags:
   - pancakes
   - dessert
