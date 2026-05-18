@@ -26,6 +26,8 @@ servings: "10 bowls"
 summary: "Creamy pumpkin soup with curry and turmeric. A simple homemade soup full of rich flavor."
 ---
 
+# Pumpkin and Curry Soup
+
 Blend the baked pumpkin without the skin because the skin will give the soup a green color. Add the remaining ingredients, water, potatoes and spices.
 
 ## Ingredients
