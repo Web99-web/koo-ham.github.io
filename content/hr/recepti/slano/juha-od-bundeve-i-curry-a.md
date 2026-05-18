@@ -26,6 +26,8 @@ servings: "10 tanjura"
 summary: "Kremasta juha od bundeve s curryjem i kurkumom. Jednostavna domaća juha puna okusa."
 ---
 
+# Juha od bundeve i curry-a
+
 Ispečenu bundevu izmiksajte u blenderu bez kore jer će kora dati zelenu boju. Dodajte ostale sastojke, vodu, krumpir i začine.
 
 ## Sastojci
