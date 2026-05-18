@@ -6,6 +6,7 @@ date: 2024-06-30T12:00:00+02:00
 translationKey: "salata-sa-vrhnjem"
 category: "slano"
 style: "tradicionalno"
+image_alt: "Salata sa vrhnjem, rajčicom i krastavcima"
 tags:
   - salata
   - vrhnje
