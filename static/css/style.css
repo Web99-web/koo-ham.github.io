@@ -428,7 +428,7 @@ footer {
   text-decoration: underline;
 }
 
-/* GRID ZA RECEPTE * dodano 09.05.2026/
+/* GRID ZA RECEPTE * dodano 09.05.2026*/
 .recipe-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
