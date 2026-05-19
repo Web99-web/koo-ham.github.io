@@ -537,14 +537,19 @@ nav ul {
   border-radius: 12px;
   margin-bottom: 2rem;
 }
+/* ------------------------------------------------ */
+/* TEST GRID — postavljeno 09.05.2026 privremeno isključen 19.05.2026
+   razlog:
+   pregazio mobile responsive grid zbog !important
+   i forsirao 3 kolone na mobitelu
 
-/* TEST GRID */
 .recipe-grid {
   display: grid !important;
   grid-template-columns: repeat(3, 1fr) !important;
   gap: 24px !important;
 }
-
+*/
+/* ------------------------------------------------ */
 
 /* ------------------------------------------------ */
 /* FORCE FIX kartica 09.05.2026 */
