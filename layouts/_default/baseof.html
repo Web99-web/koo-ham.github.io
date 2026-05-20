@@ -59,7 +59,7 @@
 
   <!-- GLAVNA SLIKA RECEPTA -->
   {{ with .Params.image }}
-  "image": "https://web99-web.github.io/koo-ham.github.io{{ . }}",
+  "image": "{{ absURL . }}",
   {{ end }}
 
   <!-- AUTOR -->
