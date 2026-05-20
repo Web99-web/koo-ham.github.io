@@ -25,7 +25,8 @@
       <span class="card-badge">{{ .Params.category }}</span>
 
       <!-- 🔥 FIX -->
-      <img src="https://web99-web.github.io/koo-ham.github.io{{ .Params.image }}" 
+      
+      <img src="{{ .Params.image }}"
            alt="{{ .Params.image_alt | default .Title }}"
            class="card-image">
 
