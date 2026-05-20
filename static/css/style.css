@@ -107,7 +107,7 @@ header {
 
 .hero {
   position: relative;
-  background: url('/koo-ham.github.io/images/blueberry-cake.png') center center / cover no-repeat;
+  background: url('/images/blueberry-cake.png') center center / cover no-repeat;
   height: 75vh;
   display: flex;
   align-items: center;
