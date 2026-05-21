@@ -3,8 +3,8 @@
 {{- $current := . -}}
 {{- $tags := .Params.tags | default slice -}}
 
-{{/* svi recipe pageovi */}}
-{{- $all := site.RegularPages -}}
+{{/* samo recepti, bez statičnih stranica kao kontakt, privatnost, oglašavanje */}}
+{{- $all := where site.RegularPages "Section" "recipes" -}}
 
 {{/* makni trenutni recept */}}
 {{- $rel := where $all "Permalink" "ne" $current.Permalink -}}
