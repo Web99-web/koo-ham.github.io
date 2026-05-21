@@ -8,20 +8,24 @@
 
     <nav class="footer-links">
 
-      <a href="{{ if eq .Lang "hr" }}/about/{{ else }}/en/about/{{ end }}">
+      <a href="{{ if eq .Lang "hr" }}/o-nama/{{ else }}/en/about/{{ end }}">
         {{ if eq .Lang "hr" }}O nama{{ else }}About{{ end }}
       </a>
 
-      <a href="{{ if eq .Lang "hr" }}/contact/{{ else }}/en/contact/{{ end }}">
+      <a href="{{ if eq .Lang "hr" }}/kontakt/{{ else }}/en/contact/{{ end }}">
         {{ if eq .Lang "hr" }}Kontakt{{ else }}Contact{{ end }}
       </a>
 
-      <a href="{{ if eq .Lang "hr" }}/privacy/{{ else }}/en/privacy/{{ end }}">
-        Privacy
+      <a href="{{ if eq .Lang "hr" }}/privatnost/{{ else }}/en/privacy/{{ end }}">
+        {{ if eq .Lang "hr" }}Privatnost{{ else }}Privacy{{ end }}
       </a>
 
-      <a href="{{ if eq .Lang "hr" }}/disclaimer/{{ else }}/en/disclaimer/{{ end }}">
-        Disclaimer
+      <a href="{{ if eq .Lang "hr" }}/oglasavanje/{{ else }}/en/advertise/{{ end }}">
+        {{ if eq .Lang "hr" }}Oglašavanje{{ else }}Advertise{{ end }}
+      </a>
+
+      <a href="{{ if eq .Lang "hr" }}/odricanje-od-odgovornosti/{{ else }}/en/disclaimer/{{ end }}">
+        {{ if eq .Lang "hr" }}Odricanje{{ else }}Disclaimer{{ end }}
       </a>
 
     </nav>
