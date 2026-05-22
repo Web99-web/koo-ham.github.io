@@ -44,73 +44,130 @@
 
 {{ if .Params.ingredients }}
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Recipe",
+{{/* OSNOVNI PODACI O RECEPTU */}}
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "Recipe"
+  "name" .Title
+  "author" (dict "@type" "Organization" "name" "Koo-ham")
+  "recipeIngredient" .Params.ingredients
+-}}
 
-  <!-- NASLOV RECEPTA -->
-  "name": "{{ .Title }}",
+{{/* OPIS RECEPTA - SUMMARY */}}
+{{ with .Params.summary }}
+  {{- $schema = merge $schema (dict "description" .) -}}
+{{ end }}
 
-  <!-- OPIS RECEPTA -->
-  {{ with .Params.summary }}
-  "description": "{{ . }}",
-  {{ end }}
+{{/* GLAVNA SLIKA RECEPTA */}}
+{{ with .Params.image }}
+  {{- $schema = merge $schema (dict "image" (absURL .)) -}}
+{{ end }}
 
-  <!-- GLAVNA SLIKA RECEPTA -->
-  {{ with .Params.image }}
-  "image": "{{ absURL . }}",
-  {{ end }}
+{{/* URL RECEPTA */}}
+{{ with .Permalink }}
+  {{- $schema = merge $schema (dict "url" .) -}}
+{{ end }}
 
-  <!-- AUTOR -->
-  "author": {
-    "@type": "Organization",
-    "name": "Koo-ham"
-  },
+{{/* DATUM OBJAVE */}}
+{{ with .Date }}
+  {{- $schema = merge $schema (dict "datePublished" (.Format "2006-01-02")) -}}
+{{ end }}
 
-  <!-- VRIJEME PRIPREME - PREP TIME -->
+{{/* KATEGORIJA RECEPTA - npr. slatko, slano, sweet, savory */}}
+{{ with .Params.category }}
+  {{- $schema = merge $schema (dict "recipeCategory" .) -}}
+{{ end }}
+
+{{/* KUHINJA / STIL - npr. tradicionalno, strano, traditional, international */}}
+{{ with .Params.style }}
+  {{- $schema = merge $schema (dict "recipeCuisine" .) -}}
+{{ end }}
+
+{{/* KLJUČNE RIJEČI - TAGOVI */}}
+{{ with .Params.tags }}
+  {{- $schema = merge $schema (dict "keywords" (delimit . ", ")) -}}
+{{ end }}
+
+{{/* VRIJEME PRIPREME - prvo koristi prep_time_schema, ako postoji */}}
+{{ if .Params.prep_time_schema }}
+
+  {{- $schema = merge $schema (dict "prepTime" .Params.prep_time_schema) -}}
+
+{{ else }}
+
+  {{/* VRIJEME PRIPREME - automatski iz prep_time, npr. "10 min" ili "1 sat 20 min" */}}
   {{ with .Params.prep_time }}
 
-  {{ $prep := lower . }}
+    {{- $prep := lower . -}}
+    {{- $prepISO := "PT" -}}
 
-  {{ $prepHours := replaceRE `.*?([0-9]+)\s*(sat|sata|sati).*` "$1" $prep }}
-  {{ $prepMinutes := replaceRE `.*?([0-9]+)\s*min.*` "$1" $prep }}
+    {{- if in $prep "sat" -}}
+      {{- $prepHours := replaceRE `.*?([0-9]+)\s*(sat|sata|sati).*` "$1" $prep -}}
+      {{- $prepISO = printf "%s%sH" $prepISO $prepHours -}}
+    {{- end -}}
 
-  "prepTime": "PT{{ if in $prep "sat" }}{{ $prepHours }}H{{ end }}{{ if in $prep "min" }}{{ $prepMinutes }}M{{ end }}",
+    {{- if in $prep "min" -}}
+      {{- $prepMinutes := replaceRE `.*?([0-9]+)\s*min.*` "$1" $prep -}}
+      {{- $prepISO = printf "%s%sM" $prepISO $prepMinutes -}}
+    {{- end -}}
+
+    {{- if ne $prepISO "PT" -}}
+      {{- $schema = merge $schema (dict "prepTime" $prepISO) -}}
+    {{- end -}}
 
   {{ end }}
 
-  <!-- VRIJEME KUHANJA - COOK TIME -->
-  {{ with .Params.cook_time_schema }}
-  "cookTime": "{{ . }}",
-  {{ end }}
+{{ end }}
 
+{{/* VRIJEME KUHANJA / PEČENJA - prvo koristi cook_time_schema, ako postoji */}}
+{{ if .Params.cook_time_schema }}
+
+  {{- $schema = merge $schema (dict "cookTime" .Params.cook_time_schema) -}}
+
+{{ else }}
+
+  {{/* VRIJEME KUHANJA / PEČENJA - automatski iz cook_time, npr. "20 min" ili "1 sat" */}}
   {{ with .Params.cook_time }}
 
-  {{ $cook := lower . }}
+    {{- $cook := lower . -}}
+    {{- $cookISO := "PT" -}}
 
-  {{ $cookHours := replaceRE `.*?([0-9]+)\s*(sat|sata|sati).*` "$1" $cook }}
-  {{ $cookMinutes := replaceRE `.*?([0-9]+)\s*min.*` "$1" $cook }}
+    {{- if in $cook "sat" -}}
+      {{- $cookHours := replaceRE `.*?([0-9]+)\s*(sat|sata|sati).*` "$1" $cook -}}
+      {{- $cookISO = printf "%s%sH" $cookISO $cookHours -}}
+    {{- end -}}
 
-  "cookTime": "PT{{ if in $cook "sat" }}{{ $cookHours }}H{{ end }}{{ if in $cook "min" }}{{ $cookMinutes }}M{{ end }}",
+    {{- if in $cook "min" -}}
+      {{- $cookMinutes := replaceRE `.*?([0-9]+)\s*min.*` "$1" $cook -}}
+      {{- $cookISO = printf "%s%sM" $cookISO $cookMinutes -}}
+    {{- end -}}
+
+    {{- if ne $cookISO "PT" -}}
+      {{- $schema = merge $schema (dict "cookTime" $cookISO) -}}
+    {{- end -}}
 
   {{ end }}
 
-  <!-- BROJ PORCIJA -->
-  {{ with .Params.servings }}
-  "recipeYield": "{{ . }}",
-  {{ end }}
+{{ end }}
 
-  <!-- SASTOJCI -->
-  "recipeIngredient": [
-    {{ range $index, $item := .Params.ingredients }}
-      "{{ $item }}"{{ if ne (add $index 1) (len $.Params.ingredients) }},{{ end }}
-    {{ end }}
-  ]
-}
+{{/* BROJ PORCIJA */}}
+{{ with .Params.servings }}
+  {{- $schema = merge $schema (dict "recipeYield" .) -}}
+{{ end }}
+
+{{/* NUTRITION - KALORIJE, samo ako ih dodamo u front matter */}}
+{{ with .Params.calories }}
+  {{- $schema = merge $schema (dict "nutrition" (dict "@type" "NutritionInformation" "calories" .)) -}}
+{{ end }}
+
+<script type="application/ld+json">
+{{ $schema | jsonify | safeJS }}
 </script>
 
 {{ end }}
+
+
+  
   <title>{{ .Title }}</title>
 
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
