@@ -7,50 +7,47 @@ translationKey: "moj-prvi-domaci-razano-psenicni-kruh"
 category: "savory"
 style: "traditional"
 tags:
-
-* homemade-bread
-* rye-bread
-* wheat-bread
-* bread
-* first-bread
-* home-cooking
-* bread-baking
-* traditional
-* stew
+  - homemade-bread
+  - rye-bread
+  - wheat-bread
+  - bread
+  - first-bread
+  - home-cooking
+  - bread-baking
+  - traditional
+  - stew
 
 image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/kruh-prednja-strana.jpeg"
 image_alt: "My first homemade rye-wheat bread"
 
 gallery:
+  - image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/kvasac.jpeg"
+    alt: "Activated yeast for homemade rye-wheat bread"
+    caption: "The yeast activated nicely."
 
-* image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/kvasac.jpeg"
-  alt: "Activated yeast for homemade rye-wheat bread"
-  caption: "The yeast activated nicely."
+  - image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/tijesto-se-dignulo.jpeg"
+    alt: "Risen dough for homemade rye-wheat bread"
+    caption: "The dough rose nicely, although it was quite soft and sticky."
 
-* image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/tijesto-se-dignulo.jpeg"
-  alt: "Risen dough for homemade rye-wheat bread"
-  caption: "The dough rose nicely, although it was quite soft and sticky."
+  - image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/kruh-prednja-strana.jpeg"
+    alt: "Baked homemade rye-wheat bread from the front"
+    caption: "The bread after baking, viewed from the front."
 
-* image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/kruh-prednja-strana.jpeg"
-  alt: "Baked homemade rye-wheat bread from the front"
-  caption: "The bread after baking, viewed from the front."
+  - image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/kruh-straznja-strana.jpeg"
+    alt: "Baked homemade rye-wheat bread from the back"
+    caption: "The other side of the bread after baking."
 
-* image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/kruh-straznja-strana.jpeg"
-  alt: "Baked homemade rye-wheat bread from the back"
-  caption: "The other side of the bread after baking."
-
-* image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/kruh-presjek.jpeg"
-  alt: "Inside slice of homemade rye-wheat bread"
-  caption: "The inside of the bread after cooling."
+  - image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/kruh-presjek.jpeg"
+    alt: "Inside slice of homemade rye-wheat bread"
+    caption: "The inside of the bread after cooling."
 
 ingredients:
-
-* rye flour
-* wheat flour
-* salt
-* sugar
-* yeast
-* lukewarm water
+  - rye flour
+  - wheat flour
+  - salt
+  - sugar
+  - yeast
+  - lukewarm water
 
 prep_time: "20 min"
 cook_time: "1 h 15 min"
@@ -58,7 +55,8 @@ servings: "4 smaller loaves"
 
 summary: "My first homemade rye-wheat bread did not look perfect, but the taste was excellent. An honest recipe with useful notes on what I would do differently next time."
 
-## draft: false
+draft: false
+
 ---
 
 # My First Homemade Rye-Wheat Bread
