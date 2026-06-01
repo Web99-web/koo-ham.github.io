@@ -7,50 +7,47 @@ translationKey: "moj-prvi-domaci-razano-psenicni-kruh"
 category: "slano"
 style: "tradicionalno"
 tags:
-
-* domaći-kruh
-* raženi-kruh
-* pšenični-kruh
-* kruh
-* prvi-kruh
-* domaća-kuhinja
-* pečenje-kruha
-* tradicionalno
-* čobanac
+  - domaći-kruh
+  - raženi-kruh
+  - pšenični-kruh
+  - kruh
+  - prvi-kruh
+  - domaća-kuhinja
+  - pečenje-kruha
+  - tradicionalno
+  - čobanac
 
 image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/kruh-prednja-strana.jpeg"
 image_alt: "Moj prvi domaći raženo-pšenični kruh"
 
 gallery:
+  - image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/kvasac.jpeg"
+    alt: "Dignuti kvasac za domaći raženo-pšenični kruh"
+    caption: "Kvasac se lijepo aktivirao."
 
-* image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/kvasac.jpeg"
-  alt: "Dignuti kvasac za domaći raženo-pšenični kruh"
-  caption: "Kvasac se lijepo aktivirao."
+  - image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/tijesto-se-dignulo.jpeg"
+    alt: "Dignuto tijesto za domaći raženo-pšenični kruh"
+    caption: "Tijesto se lijepo diglo, iako je bilo dosta mekano i ljepljivo."
 
-* image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/tijesto-se-dignulo.jpeg"
-  alt: "Dignuto tijesto za domaći raženo-pšenični kruh"
-  caption: "Tijesto se lijepo diglo, iako je bilo dosta mekano i ljepljivo."
+  - image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/kruh-prednja-strana.jpeg"
+    alt: "Pečeni domaći raženo-pšenični kruh s prednje strane"
+    caption: "Kruh nakon pečenja, s prednje strane."
 
-* image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/kruh-prednja-strana.jpeg"
-  alt: "Pečeni domaći raženo-pšenični kruh s prednje strane"
-  caption: "Kruh nakon pečenja, s prednje strane."
+  - image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/kruh-straznja-strana.jpeg"
+    alt: "Pečeni domaći raženo-pšenični kruh sa stražnje strane"
+    caption: "Druga strana kruha nakon pečenja."
 
-* image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/kruh-straznja-strana.jpeg"
-  alt: "Pečeni domaći raženo-pšenični kruh sa stražnje strane"
-  caption: "Druga strana kruha nakon pečenja."
-
-* image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/kruh-presjek.jpeg"
-  alt: "Presjek domaćeg raženo-pšeničnog kruha"
-  caption: "Presjek kruha nakon hlađenja."
+  - image: "/images/savory/kruh/prvi-kruh-razeno-psenicni/kruh-presjek.jpeg"
+    alt: "Presjek domaćeg raženo-pšeničnog kruha"
+    caption: "Presjek kruha nakon hlađenja."
 
 ingredients:
-
-* raženo brašno
-* pšenično brašno
-* sol
-* šećer
-* kvasac
-* mlaka voda
+  - raženo brašno
+  - pšenično brašno
+  - sol
+  - šećer
+  - kvasac
+  - mlaka voda
 
 prep_time: "20 min"
 cook_time: "1 h 15 min"
@@ -58,8 +55,7 @@ servings: "4 manje štruce"
 
 summary: "Moj prvi domaći raženo-pšenični kruh koji nije izgledom ispao savršeno, ali je okusom bio odličan. Iskren recept s korisnim savjetima što drugi put napraviti bolje."
 
-## draft: false
-
+draft: false
 ---
 
 # Moj prvi domaći raženo-pšenični kruh
@@ -72,12 +68,12 @@ Ovo je recept za moj prvi domaći kruh. Nije izgledom ispao savršeno, ali okuso
 
 ## Sastojci
 
-* 500 g raženog brašna
-* 500 g običnog pšeničnog oštrog brašna
-* 2 male žličice soli
-* 2 male žličice šećera
-* 9 dcl tople mlake vode
-* 2 svježa kvasca
+- 500 g raženog brašna
+- 500 g običnog pšeničnog oštrog brašna
+- 2 male žličice soli
+- 2 male žličice šećera
+- 9 dcl tople mlake vode
+- 2 svježa kvasca
 
 ## Priprema
 
