@@ -59,6 +59,7 @@ servings: "4 manje štruce"
 summary: "Moj prvi domaći raženo-pšenični kruh koji nije izgledom ispao savršeno, ali je okusom bio odličan. Iskren recept s korisnim savjetima što drugi put napraviti bolje."
 
 ## draft: false
+
 ---
 
 # Moj prvi domaći raženo-pšenični kruh
