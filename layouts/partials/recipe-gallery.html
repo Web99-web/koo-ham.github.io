@@ -1,0 +1,16 @@
+{{ with .Params.gallery }}
+<section class="recipe-gallery-section">
+  <h2>{{ if eq $.Lang "hr" }}Slike iz pripreme{{ else }}Preparation photos{{ end }}</h2>
+
+  <div class="recipe-gallery-carousel">
+    {{ range . }}
+      <figure class="recipe-gallery-item">
+        <img src="{{ .image }}" alt="{{ .alt }}">
+        {{ with .caption }}
+          <figcaption>{{ . }}</figcaption>
+        {{ end }}
+      </figure>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
