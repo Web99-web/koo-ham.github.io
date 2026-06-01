@@ -4,8 +4,8 @@ slug: "my-first-homemade-rye-wheat-bread"
 url: "/en/recipes/my-first-homemade-rye-wheat-bread/"
 date: 2026-06-01T12:00:00+02:00
 translationKey: "moj-prvi-domaci-razano-psenicni-kruh"
-category: "savory"
-style: "traditional"
+category: "slano"
+style: "tradicionalno"
 tags:
   - homemade-bread
   - rye-bread
