@@ -2,7 +2,7 @@
 title: "Chocolate Buhtle Twist Choco-Chip"
 slug: "chocolate-buhtle-twist-choco-chip"
 url: "/recipes/chocolate-buhtle-twist-choco-chip/"
-date: 2026-06-07T12:00:00+02:00
+date: 2026-06-07T06:00:00+02:00
 translationKey: "cokoladne-buhtle-twist-choco-chip"
 category: "slatko"
 style: "tradicionalno"
