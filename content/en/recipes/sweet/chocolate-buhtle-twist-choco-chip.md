@@ -23,22 +23,22 @@ image: "/images/buhtle/cokoladne-buhtle/Buhtle-čokolada-twist-choco-chip.jpeg"
 image_alt: "Chocolate buhtle twist choco-chip"
 
 gallery:
-  - image: "/images/buhtle/cokoladne-buhtle/Buhtle-čokolada-twist-choco-chip.jpeg"
-    alt: "Chocolate buhtle twist choco-chip after baking"
-    caption: "Soft homemade buhtle with small pieces of chocolate."
+  - image: "/images/buhtle/cokoladne-buhtle/Buhtle-čokolada-twist-choco-chip3.jpeg"
+    alt: "Chocolate buhtle arranged in the baking tray before baking"
+    caption: "The buhtle arranged in the tray before baking and the final rise."
 
   - image: "/images/buhtle/cokoladne-buhtle/Buhtle-čokolada-twist-choco-chip2.jpeg"
-    alt: "Chocolate buhtle arranged in a baking tray"
-    caption: "The buhtle arranged in the tray before or after rising."
+    alt: "Baked chocolate buhtle in the baking tray"
+    caption: "The baked buhtle after they have risen and turned golden."
 
-  - image: "/images/buhtle/cokoladne-buhtle/Buhtle-čokolada-twist-choco-chip3.jpeg"
-    alt: "Baked chocolate buhtle close-up"
-    caption: "A chocolate twist with extra pieces of chocolate inside."
+  - image: "/images/buhtle/cokoladne-buhtle/Buhtle-čokolada-twist-choco-chip.jpeg"
+    alt: "A piece of chocolate buhtle on a plate"
+    caption: "Soft homemade buhtle with small pieces of chocolate."
 
   - image: "/images/buhtle/cokoladne-buhtle/Buhtle-čokolada-twist-choco-chip4.jpeg"
     alt: "Homemade chocolate buhtle ready to serve"
-    caption: "These soft chocolate buhtle are best while fresh and warm."
-
+    caption: "These chocolate buhtle are best while still soft and fresh."
+    
 ingredients:
   - flour
   - sugar
