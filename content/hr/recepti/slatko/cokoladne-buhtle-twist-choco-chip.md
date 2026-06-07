@@ -23,22 +23,22 @@ image: "/images/buhtle/cokoladne-buhtle/Buhtle-čokolada-twist-choco-chip.jpeg"
 image_alt: "Čokoladne buhtle twist choco-chip"
 
 gallery:
-  - image: "/images/buhtle/cokoladne-buhtle/Buhtle-čokolada-twist-choco-chip.jpeg"
-    alt: "Čokoladne buhtle twist choco-chip nakon pečenja"
-    caption: "Mekane domaće buhtle s komadićima čokolade."
+  - image: "/images/buhtle/cokoladne-buhtle/Buhtle-čokolada-twist-choco-chip3.jpeg"
+    alt: "Čokoladne buhtle složene u plehu prije pečenja"
+    caption: "Buhtle složene u pleh prije pečenja i zadnjeg dizanja."
 
   - image: "/images/buhtle/cokoladne-buhtle/Buhtle-čokolada-twist-choco-chip2.jpeg"
-    alt: "Čokoladne buhtle u plehu"
-    caption: "Buhtle složene u pleh prije ili nakon dizanja."
+    alt: "Pečene čokoladne buhtle u plehu"
+    caption: "Pečene buhtle u plehu nakon što su dobile lijepu zlatnu boju."
 
-  - image: "/images/buhtle/cokoladne-buhtle/Buhtle-čokolada-twist-choco-chip3.jpeg"
-    alt: "Pečene čokoladne buhtle izbliza"
-    caption: "Čokoladni twist s dodatnim komadićima čokolade."
+  - image: "/images/buhtle/cokoladne-buhtle/Buhtle-čokolada-twist-choco-chip.jpeg"
+    alt: "Komad čokoladne buhtle na tanjuru"
+    caption: "Mekane domaće buhtle s komadićima čokolade."
 
   - image: "/images/buhtle/cokoladne-buhtle/Buhtle-čokolada-twist-choco-chip4.jpeg"
     alt: "Domaće čokoladne buhtle spremne za posluživanje"
-    caption: "Mirisne buhtle najbolje su dok su još mekane i svježe."
-
+    caption: "Čokoladne buhtle najbolje su dok su još mekane i svježe."
+    
 ingredients:
   - brašno
   - šećer
