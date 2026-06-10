@@ -7,36 +7,34 @@ translationKey: "spageti-carbonara-hrvatski-twist-s-vrhnjem"
 category: "slano"
 style: "strano"
 tags:
-
-* špageti
-* carbonara
-* tjestenina
-* panceta
-* slanina
-* vrhnje
-* parmezan
-* brzo-jelo
-* domaća-kuhinja
-* talijanska-kuhinja
+  - špageti
+  - carbonara
+  - tjestenina
+  - panceta
+  - slanina
+  - vrhnje
+  - parmezan
+  - brzo-jelo
+  - domaća-kuhinja
+  - talijanska-kuhinja
 
 image: "/images/savory/spaghetti/spaghetti-carbonara-spageti.jpeg"
 image_alt: "Špageti carbonara s pancetom, vrhnjem, parmezanom i paprom"
 
 ingredients:
-
-* špageti
-* panceta
-* slanina
-* pršut
-* maslinovo ulje
-* češnjak
-* jaja
-* vrhnje za kuhanje
-* sol
-* papar
-* Vegeta
-* peršin
-* parmezan
+  - špageti
+  - panceta
+  - slanina
+  - pršut
+  - maslinovo ulje
+  - češnjak
+  - jaja
+  - vrhnje za kuhanje
+  - sol
+  - papar
+  - Vegeta
+  - peršin
+  - parmezan
 
 prep_time: "10 min"
 prep_time_schema: "PT10M"
@@ -46,7 +44,8 @@ servings: "4 tanjura"
 
 summary: "Špageti carbonara na domaći način, s pancetom ili slaninom, vrhnjem za kuhanje, jajima, parmezanom i paprom. Kremasta verzija popularnog jela, brzo gotova i idealna za obiteljski ručak."
 
-## draft: false
+draft: false
+---
 
 # Špageti carbonara – hrvatski twist s vrhnjem
 
