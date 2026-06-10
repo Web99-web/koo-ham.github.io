@@ -95,6 +95,20 @@
 
 {{ else }}
 
+  {{/* UPUTE ZA PRIPREMU RECEPTA  - dodano 10.06.2026*/}}
+{{ with .Params.instructions }}
+  {{- $steps := slice -}}
+
+  {{- range . }}
+    {{- $steps = $steps | append (dict
+      "@type" "HowToStep"
+      "text" .
+    ) -}}
+  {{- end }}
+
+  {{- $schema = merge $schema (dict "recipeInstructions" $steps) -}}
+{{ end }}
+  
   {{/* VRIJEME PRIPREME - automatski iz prep_time, npr. "10 min" ili "1 sat 20 min" */}}
   {{ with .Params.prep_time }}
 
