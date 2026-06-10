@@ -37,7 +37,9 @@ ingredients:
   - ulje
 
 prep_time: "30 min"
+prep_time_schema: "PT30M"
 cook_time: "2 h"
+cook_time_schema: "PT2H"
 servings: "8–12 tanjura"
 
 summary: "Domaći ljuti čobanac od više vrsta mesa, luka, povrća i začina. Puni lonac koji se polako kuha i daje 8–10 tanjura bogatog, slasnog jela."
