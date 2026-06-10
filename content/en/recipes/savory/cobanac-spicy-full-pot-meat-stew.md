@@ -37,7 +37,9 @@ ingredients:
   - oil
 
 prep_time: "30 min"
+prep_time_schema: "PT30M"
 cook_time: "2 h"
+cook_time_schema: "PT2H"
 servings: "8–12 plates"
 
 summary: "Homemade spicy čobanac made with several types of meat, onions, vegetables and spices. A full pot that cooks slowly and gives 8–12 plates of rich, hearty stew."
