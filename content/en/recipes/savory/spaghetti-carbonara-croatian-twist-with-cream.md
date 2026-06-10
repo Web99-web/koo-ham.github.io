@@ -48,6 +48,8 @@ summary: "Spaghetti carbonara made in a homemade Croatian-style version, with pa
 
 ## draft: false
 
+---
+
 # Spaghetti carbonara – Croatian twist with cream
 
 Spaghetti carbonara is one of those dishes almost everyone likes, but many people prepare it in their own way. The original Italian carbonara is made without cream, without garlic and without parsley, using only eggs, cheese, black pepper and guanciale or pancetta. But in Croatia and in many home kitchens, a creamier version with cooking cream is also very common.
