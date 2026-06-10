@@ -1,5 +1,4 @@
 ---
-
 title: "Spaghetti carbonara – Croatian twist with cream"
 slug: "spaghetti-carbonara-croatian-twist-with-cream"
 url: "/en/recipes/spaghetti-carbonara-croatian-twist-with-cream/"
@@ -8,36 +7,34 @@ translationKey: "spageti-carbonara-hrvatski-twist-s-vrhnjem"
 category: "slano"
 style: "strano"
 tags:
-
-* spaghetti
-* carbonara
-* pasta
-* pancetta
-* bacon
-* cream
-* parmesan
-* quick-meal
-* homemade-food
-* Italian-food
+  - spaghetti
+  - carbonara
+  - pasta
+  - pancetta
+  - bacon
+  - cream
+  - parmesan
+  - quick-meal
+  - homemade-food
+  - Italian-food
 
 image: "/images/savory/spaghetti/spaghetti-carbonara-spageti.jpeg"
 image_alt: "Spaghetti carbonara with pancetta, cream, parmesan and black pepper"
 
 ingredients:
-
-* spaghetti
-* pancetta
-* bacon
-* prosciutto
-* olive oil
-* garlic
-* eggs
-* cooking cream
-* salt
-* pepper
-* Vegeta seasoning
-* parsley
-* parmesan
+  - spaghetti
+  - pancetta
+  - bacon
+  - prosciutto
+  - olive oil
+  - garlic
+  - eggs
+  - cooking cream
+  - salt
+  - pepper
+  - Vegeta seasoning
+  - parsley
+  - parmesan
 
 prep_time: "10 min"
 prep_time_schema: "PT10M"
@@ -47,8 +44,7 @@ servings: "4 plates"
 
 summary: "Spaghetti carbonara made in a homemade Croatian-style version, with pancetta or bacon, cooking cream, eggs, parmesan and black pepper. A creamy version of a popular pasta dish, quick to prepare and perfect for a family lunch."
 
-## draft: false
-
+draft: false
 ---
 
 # Spaghetti carbonara – Croatian twist with cream
