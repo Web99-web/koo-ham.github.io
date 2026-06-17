@@ -19,7 +19,7 @@ tags:
 * domaća-kuhinja
 * kolači-s-kvascem
 
-image: "/images/buhtle/domace-buhtle/domace-buhtle-s-marmeladom-ili-cokoladom.jpeg"
+image: "static/images/buhtle/marmelada-1kg/buhtle-socne-marmelada-cokolada.jpeg"
 image_alt: "Domaće buhtle s marmeladom ili čokoladom"
 
 ingredients:
