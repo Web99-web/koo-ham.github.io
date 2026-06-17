@@ -22,6 +22,23 @@ tags:
 image: "/images/buhtle/marmelada-1kg/buhtle-socne-marmelada-cokolada.jpeg"
 image_alt: "Domaće buhtle s marmeladom ili čokoladom"
 
+gallery:
+  - image: "/images/buhtle/marmelada-1kg/buhtle-tijesto.jpeg"
+    alt: "Dizano tijesto za domaće buhtle"
+    caption: "Tijesto za buhtle nakon dizanja, spremno za oblikovanje."
+
+  - image: "/images/buhtle/marmelada-1kg/buhtle-cokolada-marmelada.jpeg"
+    alt: "Domaće buhtle punjene čokoladom i marmeladom"
+    caption: "Buhtle punjene marmeladom ili čokoladom prije posluživanja."
+
+  - image: "/images/buhtle/marmelada-1kg/buhtla-cokolada-marmelada.jpeg"
+    alt: "Presjek buhtle s čokoladom i marmeladom"
+    caption: "Mekana buhtla s punjenjem od čokolade ili marmelade."
+
+  - image: "/images/buhtle/marmelada-1kg/buhtle-socne-marmelada-cokolada.jpeg"
+    alt: "Sočne domaće buhtle s marmeladom i čokoladom"
+    caption: "Pečene domaće buhtle, mekane i sočne, punjene po želji."
+
 ingredients:
   - glatko brašno
   - sol
