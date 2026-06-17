@@ -6,20 +6,20 @@ date: 2026-06-17T12:00:00+02:00
 translationKey: "domace-buhtle-s-marmeladom-ili-cokoladom"
 category: "slatko"
 style: "tradicionalno"
+
 tags:
+  - buhtle
+  - domaće-buhtle
+  - buhtle-s-marmeladom
+  - buhtle-s-čokoladom
+  - dizano-tijesto
+  - domaći-kolači
+  - slatko
+  - tradicionalno
+  - domaća-kuhinja
+  - kolači-s-kvascem
 
-* buhtle
-* domaće-buhtle
-* buhtle-s-marmeladom
-* buhtle-s-čokoladom
-* dizano-tijesto
-* domaći-kolači
-* slatko
-* tradicionalno
-* domaća-kuhinja
-* kolači-s-kvascem
-
-image: "static/images/buhtle/marmelada-1kg/buhtle-socne-marmelada-cokolada.jpeg"
+image: "/images/buhtle/marmelada-1kg/buhtle-socne-marmelada-cokolada.jpeg"
 image_alt: "Domaće buhtle s marmeladom ili čokoladom"
 
 ingredients:
