@@ -23,17 +23,16 @@ image: "/images/buhtle/marmelada-1kg/buhtle-socne-marmelada-cokolada.jpeg"
 image_alt: "Domaće buhtle s marmeladom ili čokoladom"
 
 ingredients:
-
-* glatko brašno
-* sol
-* suhi kvasac
-* šećer
-* mlijeko
-* maslac
-* ulje
-* jaja
-* marmelada
-* čokolada
+  - glatko brašno
+  - sol
+  - suhi kvasac
+  - šećer
+  - mlijeko
+  - maslac
+  - ulje
+  - jaja
+  - marmelada
+  - čokolada
 
 prep_time: "35 min + dizanje tijesta"
 cook_time: "35–45 min"
@@ -41,7 +40,10 @@ servings: "20 buhtli"
 
 summary: "Mekane domaće buhtle od dizanog tijesta, punjene marmeladom ili čokoladom, pečene dok ne dobiju lijepu zlatnu boju."
 
-## draft: false
+draft: false
+
+---
+
 
 ---
 
