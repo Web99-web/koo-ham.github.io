@@ -42,6 +42,7 @@ servings: "20 buhtli"
 summary: "Mekane domaće buhtle od dizanog tijesta, punjene marmeladom ili čokoladom, pečene dok ne dobiju lijepu zlatnu boju."
 
 ## draft: false
+
 ---
 
 # Domaće buhtle s marmeladom ili čokoladom
